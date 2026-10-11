@@ -119,24 +119,13 @@ p {
 }
 
 .text-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
   color: var(--color-emerald);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.text-label::before {
-  content: '';
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--color-emerald);
-  box-shadow: 0 0 10px var(--color-emerald);
+  margin-bottom: 0.35rem;
 }
 
 /* ==========================================================================
@@ -671,8 +660,8 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 32%;
-  opacity: 0.70;
+  object-position: center 26%;
+  opacity: 0.84;
   z-index: 1;
 }
 
@@ -680,13 +669,10 @@ p {
   position: absolute;
   inset: 0;
   z-index: 2;
-  /* Balanced gradient overlay to ensure crystal clear typography while displaying palace facade */
-  background: linear-gradient(
-    180deg,
-    rgba(9, 9, 11, 0.45) 0%,
-    rgba(9, 9, 11, 0.62) 42%,
-    rgba(9, 9, 11, 0.94) 100%
-  );
+  /* Multi-directional subtle gradient: keeps 4K palace clearly visible while providing dark contrast for text */
+  background: 
+    linear-gradient(180deg, rgba(9, 9, 11, 0.25) 0%, rgba(9, 9, 11, 0.42) 40%, rgba(9, 9, 11, 0.94) 100%),
+    linear-gradient(90deg, rgba(9, 9, 11, 0.78) 0%, rgba(9, 9, 11, 0.38) 55%, rgba(9, 9, 11, 0.15) 100%);
 }
 
 /* Massive background watermark text (20vw, 3% opacity, blur filter) */
@@ -730,38 +716,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
-.hero-badge-row {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: var(--glass-border);
-  padding: 0.35rem 0.85rem;
-  border-radius: var(--radius-full);
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--color-white);
-  letter-spacing: 0.05em;
-}
-
-.hero-badge .badge-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--color-emerald);
-  box-shadow: 0 0 8px var(--color-emerald);
+/* Clean, non-cylinder royal destination tag */
+.hero-heritage-tag {
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-emerald);
+  margin-bottom: -0.25rem;
 }
 
 .hero-title {
@@ -998,21 +963,19 @@ p {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: rgba(10, 10, 14, 0.82);
+  background: rgba(10, 10, 14, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: var(--glass-border);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--color-white);
-  padding: 0.4rem 0.85rem;
-  border-radius: var(--radius-full);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
   font-size: 0.76rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  letter-spacing: 0.05em;
+  display: inline-block;
   z-index: 2;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Dedicated Metrics Card below image (NO OVERLAPPING!) */
@@ -1041,16 +1004,6 @@ p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.analysis-status-pill {
-  font-size: 0.72rem;
-  background: var(--color-emerald-subtle);
-  color: var(--color-emerald);
-  border: 1px solid rgba(52, 211, 153, 0.3);
-  padding: 0.15rem 0.5rem;
-  border-radius: var(--radius-full);
-  font-weight: 600;
 }
 
 .analysis-metrics {
