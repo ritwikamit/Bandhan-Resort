@@ -646,18 +646,19 @@ p {
    Left typography block, Right vertical stack of glass stats cards.
    ========================================================================== */
 .hero-wrapper {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: 5.25rem;
+  padding-bottom: 2.5rem;
 }
 
 .hero-container {
-  height: 92vh;
-  min-height: 640px;
+  height: auto;
+  min-height: 680px;
   border-radius: var(--radius-wrapper);
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
+  padding: 3.5rem 0 3.5rem;
   border: var(--glass-border);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
   /* Bottom-heavy dark gradient */
@@ -670,8 +671,8 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-  opacity: 0.62;
+  object-position: center 32%;
+  opacity: 0.70;
   z-index: 1;
 }
 
@@ -679,12 +680,12 @@ p {
   position: absolute;
   inset: 0;
   z-index: 2;
-  /* Gradient overlay from zinc-950/40 to zinc-950/90 */
+  /* Balanced gradient overlay to ensure crystal clear typography while displaying palace facade */
   background: linear-gradient(
     180deg,
-    rgba(9, 9, 11, 0.40) 0%,
-    rgba(9, 9, 11, 0.65) 45%,
-    rgba(9, 9, 11, 0.92) 100%
+    rgba(9, 9, 11, 0.45) 0%,
+    rgba(9, 9, 11, 0.62) 42%,
+    rgba(9, 9, 11, 0.94) 100%
   );
 }
 
@@ -1996,10 +1997,10 @@ p {
 }
 
 .footer-logo-img {
-  width: 68px;
-  height: 68px;
+  width: 88px;
+  height: 88px;
   object-fit: contain;
-  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.45));
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
   transition: transform var(--transition-hover);
   flex-shrink: 0;
 }
@@ -2051,7 +2052,7 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1.1rem;
+  gap: 0.75rem;
 }
 
 .copyright-line {
@@ -2062,22 +2063,22 @@ p {
   letter-spacing: 0.01em;
 }
 
+/* Clean credit line without any cylinder or border wrapper */
 .developer-credit-bar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.85rem;
-  padding: 0.45rem 1.4rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-full);
-  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  gap: 0.65rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .developer-credit-bar:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.16);
-  transform: translateY(-2px);
+  background: transparent;
+  border-color: transparent;
+  transform: none;
 }
 
 .developer-credit-text {
