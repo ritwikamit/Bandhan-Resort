@@ -287,8 +287,8 @@ document.addEventListener('DOMContentLoaded', () => {
     banquet: {
       category: "AC BANQUET BALLROOM",
       title: "Grand AC Banquet Ballroom",
-      badge: "INDOOR • GRAND CHANDELIER BALLROOM",
-      meta: "6,500 SQ. FT. • UP TO 1,200 GUESTS",
+      badge: "INDOOR | GRAND CHANDELIER BALLROOM",
+      meta: "6,500 SQ. FT. | UP TO 1,200 GUESTS",
       aspect: "portrait",
       img: "assets/images/real/banquet-ballroom-chandelier.jpg",
       desc: "Opulent, climate-controlled indoor ballroom designed for grand wedding receptions, sangeets, and milestone gatherings. Adorned with cathedral ceiling draping, an ornate crystal chandelier, and wide banquet seating capacity.",
@@ -308,8 +308,8 @@ document.addEventListener('DOMContentLoaded', () => {
     lawn: {
       category: "OUTDOOR CELEBRATION LAWN",
       title: "Palace Facade & Open Celebration Lawns",
-      badge: "OUTDOOR • ROYAL ILLUMINATION & LAWNS",
-      meta: "25,000+ SQ. FT. • UP TO 2,500 GUESTS",
+      badge: "OUTDOOR | ROYAL ILLUMINATION & LAWNS",
+      meta: "25,000+ SQ. FT. | UP TO 2,500 GUESTS",
       aspect: "landscape",
       img: "assets/images/real/grand-palace-hero.jpg",
       desc: "Sprawling open-air celebration grounds framed by the illuminated palace facade and heritage jharokha pavilions. Perfect for grand baraat processions, open-air wedding ceremonies, and large receptions under starlit skies.",
@@ -329,8 +329,8 @@ document.addEventListener('DOMContentLoaded', () => {
     stage: {
       category: "RECEPTION & CEREMONIAL DAIS",
       title: "Bridal Stage & Royal Throne Dais",
-      badge: "STAGE • FLORAL THRONE DAIS",
-      meta: "ELEVATED 40-FT DAIS • PHOTOGRAPHY READY",
+      badge: "STAGE | FLORAL THRONE DAIS",
+      meta: "ELEVATED 40-FT DAIS | PHOTOGRAPHY READY",
       aspect: "portrait",
       img: "assets/images/real/stage-throne-setup.jpg",
       desc: "Grand ceremonial dais curated for jaimala rituals, ring exchanges, and bridal portraits. Featuring bespoke floral backdrops, plush velvet throne seating, and warm stage lighting reflecting on polished marble.",
@@ -350,8 +350,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mandap: {
       category: "SACRED CEREMONY PAVILION",
       title: "Traditional Vedic Wedding Mandap",
-      badge: "CEREMONY • SACRED VEDIC MANDAP",
-      meta: "SACRED ALTAR • FOUR-PILLAR PAVILION",
+      badge: "CEREMONY | SACRED VEDIC MANDAP",
+      meta: "SACRED ALTAR | FOUR-PILLAR PAVILION",
       aspect: "portrait",
       img: "assets/images/real/wedding-mandap.jpg",
       desc: "Traditional four-pillar floral canopy and consecrated havan altar for wedding vows and sacred pheras. Crafted with authentic Vedic dignity and serene spiritual ambiance.",
@@ -371,8 +371,8 @@ document.addEventListener('DOMContentLoaded', () => {
     dining: {
       category: "MULTI-CUISINE DINING & COURTYARD",
       title: "Restaurant & Paved Banquet Courtyard",
-      badge: "DINING • RESTAURANT & COURTYARD",
-      meta: "PAVED COURTYARD • UP TO 450 GUESTS",
+      badge: "DINING | RESTAURANT & COURTYARD",
+      meta: "PAVED COURTYARD | UP TO 450 GUESTS",
       aspect: "landscape",
       img: "assets/images/real/restaurant-courtyard.jpg",
       desc: "On-site restaurant facility and paved celebration courtyard for wedding feasts, anniversary lunches, and family buffet gatherings with dedicated catering zones.",
@@ -392,8 +392,8 @@ document.addEventListener('DOMContentLoaded', () => {
     room: {
       category: "PRIVATE GUEST ACCOMMODATION",
       title: "Resort Cottage Suites & Verandas",
-      badge: "ACCOMMODATION • GUEST SUITES",
-      meta: "PRIVATE COTTAGES • HOST FAMILY REST",
+      badge: "ACCOMMODATION | GUEST SUITES",
+      meta: "PRIVATE COTTAGES | HOST FAMILY REST",
       aspect: "landscape",
       img: "assets/images/real/cottage-stay-block.jpg",
       desc: "Peaceful cottage-style accommodation wings with private covered verandas and garden pathways. Provides quiet resting quarters for wedding families and traveling guests.",
@@ -473,9 +473,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (specLighting) specLighting.textContent = data.lighting;
     if (specPower) specPower.textContent = data.power;
 
-    // Update highlight pills
+    // Update highlight pills (clean pills without dots before text)
     if (spaceHighlightsPills && data.highlights) {
-      spaceHighlightsPills.innerHTML = data.highlights.map(h => `<span class="highlight-pill">&bull; ${h}</span>`).join('');
+      spaceHighlightsPills.innerHTML = data.highlights.map(h => `<span class="highlight-pill">${h}</span>`).join('');
     }
 
     // Update action buttons
