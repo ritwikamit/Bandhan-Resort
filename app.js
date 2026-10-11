@@ -285,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Feature Grid: Interactive Space & Amenity Switcher (on index.html)
   const amenityCards = document.querySelectorAll('.amenity-card');
   const spaceDisplayImg = document.getElementById('spaceDisplayImg');
+  const spaceDisplayBackdrop = document.getElementById('spaceDisplayBackdrop');
   const spaceBadgeText = document.getElementById('spaceBadgeText');
 
   amenityCards.forEach(card => {
@@ -298,10 +299,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (spaceDisplayImg && newImg) {
         spaceDisplayImg.style.opacity = '0.35';
+        if (spaceDisplayBackdrop) spaceDisplayBackdrop.style.opacity = '0.35';
         setTimeout(() => {
           spaceDisplayImg.src = newImg;
           spaceDisplayImg.alt = newTitle || 'Bandhan Resort Space';
           spaceDisplayImg.style.opacity = '1';
+          if (spaceDisplayBackdrop) {
+            spaceDisplayBackdrop.src = newImg;
+            spaceDisplayBackdrop.style.opacity = '0.55';
+          }
         }, 180);
       }
 

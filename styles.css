@@ -659,7 +659,7 @@ p {
 
 .hero-container {
   height: auto;
-  min-height: 680px;
+  min-height: 640px;
   border-radius: var(--radius-wrapper);
   position: relative;
   overflow: hidden;
@@ -668,8 +668,21 @@ p {
   padding: 3.5rem 0 3.5rem;
   border: var(--glass-border);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
-  /* Bottom-heavy dark gradient */
-  background: radial-gradient(circle at 50% 20%, rgba(24, 24, 27, 0.6) 0%, #000000 100%);
+  /* Deep obsidian background */
+  background: #09090b;
+}
+
+.hero-bg-backdrop {
+  position: absolute;
+  inset: -25px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  object-fit: cover;
+  object-position: center center;
+  filter: blur(32px) brightness(0.35);
+  transform: scale(1.08);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-bg-media {
@@ -677,20 +690,21 @@ p {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 38%;
-  opacity: 0.88;
-  z-index: 1;
+  object-fit: contain;
+  object-position: center center;
+  opacity: 0.95;
+  z-index: 2;
 }
 
 .hero-gradient-overlay {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 3;
   /* Multi-directional subtle gradient: keeps 4K palace clearly visible while providing dark contrast for text */
   background: 
-    linear-gradient(180deg, rgba(9, 9, 11, 0.25) 0%, rgba(9, 9, 11, 0.42) 40%, rgba(9, 9, 11, 0.94) 100%),
-    linear-gradient(90deg, rgba(9, 9, 11, 0.78) 0%, rgba(9, 9, 11, 0.38) 55%, rgba(9, 9, 11, 0.15) 100%);
+    linear-gradient(180deg, rgba(9, 9, 11, 0.2) 0%, rgba(9, 9, 11, 0.38) 42%, rgba(9, 9, 11, 0.92) 100%),
+    linear-gradient(90deg, rgba(9, 9, 11, 0.72) 0%, rgba(9, 9, 11, 0.3) 55%, rgba(9, 9, 11, 0.1) 100%);
+  pointer-events: none;
 }
 
 /* Massive background watermark text (20vw, 3% opacity, blur filter) */
@@ -967,19 +981,39 @@ p {
   min-height: 280px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(24, 24, 27, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-photo-backdrop {
+  position: absolute;
+  inset: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  object-fit: cover;
+  object-position: center center;
+  filter: blur(28px) brightness(0.42);
+  transform: scale(1.1);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.55;
+  transition: opacity 250ms ease;
 }
 
 .space-photo-img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   display: block;
   transition: opacity 250ms ease, transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .space-photo-box:hover .space-photo-img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .space-photo-badge {
@@ -2771,6 +2805,10 @@ p {
     border-radius: 1.5rem;
     padding: 2.25rem 1rem 1.75rem;
     min-height: auto;
+  }
+
+  .hero-bg-media {
+    object-position: center 12%;
   }
 
   .hero-watermark {
