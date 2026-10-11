@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandhan Resort | Grand Celebrations & Stays in Aurangabad, Bihar</title>
+  <meta name="description" content="Welcome to Bandhan Resort, Aurangabad, Bihar. Featuring a grand AC banquet hall, sprawling open-air wedding lawn, comfortable guest stays, children's play area, and personalized celebration hosting.">
+  <meta name="keywords" content="Bandhan Resort Aurangabad Bihar, wedding resort Aurangabad, banquet hall Aurangabad Bihar, marriage garden Bijauli road, resort in Aurangabad Bihar">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bandhanresort.com/">
+  <meta property="og:title" content="Bandhan Resort | Grand Celebrations & Stays in Aurangabad, Bihar">
+  <meta property="og:description" content="Experience unparalleled hospitality with air-conditioned banquets, lush wedding lawns, and serene garden stays near G.D. Goenka School, Aurangabad.">
+  <meta property="og:image" content="assets/images/bandhan-resort-exterior.jpg">
+
+  <!-- Fonts: Google Font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- LocalBusiness Structured Data for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Resort",
+    "name": "Bandhan Resort",
+    "image": "assets/images/bandhan-resort-exterior.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near G.D. Goenka School, Bijauli Road",
+      "addressLocality": "Aurangabad",
+      "addressRegion": "Bihar",
+      "postalCode": "824101",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 24.73554,
+      "longitude": 84.34851
+    },
+    "telephone": ["+919470273100", "+917383226422"],
+    "openingHours": "Mo-Su 08:00-23:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Grain Overlay Texture (15% Opacity SVG Noise) -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- FLOATING GLASS NAVBAR (Blur 20px, rounded-full, links text-white/80) -->
+  <header class="header-wrapper" id="siteHeader">
+    <nav class="glass-navbar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-link">
+        <div class="brand-icon">B</div>
+        <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
+        <span class="brand-badge">AURANGABAD</span>
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#spaces">Spaces & Amenities</a></li>
+        <li class="nav-item"><a href="#experience">Celebration Flow</a></li>
+        <li class="nav-item"><a href="#packages">Packages</a></li>
+        <li class="nav-item"><a href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a href="#location">Directions</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:+919470273100" class="nav-phone-btn" title="Call Bandhan Resort">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Call Venue</span>
+        </a>
+
+        <!-- Interactive Action Button (Pill with nested circular icon) -->
+        <button class="btn-action" id="openEnquiryModalBtn">
+          <span>Enquire Now</span>
+          <div class="btn-icon-wrapper">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </div>
+        </button>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="btn-mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-link">Overview <span>→</span></a></li>
+      <li><a href="#spaces" class="mobile-link">Spaces & Amenities <span>→</span></a></li>
+      <li><a href="#experience" class="mobile-link">Celebration Flow <span>→</span></a></li>
+      <li><a href="#packages" class="mobile-link">Packages <span>→</span></a></li>
+      <li><a href="#gallery" class="mobile-link">Photo Gallery <span>→</span></a></li>
+      <li><a href="#location" class="mobile-link">Location & Directions <span>→</span></a></li>
+    </ul>
+
+    <div class="mobile-nav-contacts">
+      <a href="tel:+919470273100" class="btn-action btn-action-emerald btn-action-full">
+        <span>Call: +91 94702 73100</span>
+        <div class="btn-icon-wrapper">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+      </a>
+      <a href="https://wa.me/919470273100?text=Hello%20Bandhan%20Resort,%20I%20would%20like%20to%20enquire%20about%20booking%20and%20availability." target="_blank" rel="noopener noreferrer" class="btn-glass" style="justify-content: center; width: 100%;">
+        WhatsApp Consultation
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION (Height 92vh, 2.5rem radius, zinc-950/40-90 gradient, 20vw watermark)
+         ======================================================================= -->
+    <section class="hero-wrapper site-container" id="hero">
+      <div class="hero-container">
+        <!-- High-res Resort Exterior Background Image -->
+        <img src="assets/images/bandhan-resort-exterior.jpg" alt="Bandhan Resort illuminated facade and manicured lawn at twilight" class="hero-bg-media">
+        
+        <!-- Gradient Overlay: zinc-950/40 to zinc-950/90 -->
+        <div class="hero-gradient-overlay"></div>
+
+        <!-- Massive Watermark Text (20vw, 3.5% opacity, blur) -->
+        <div class="hero-watermark" aria-hidden="true">BANDHAN</div>
+
+        <div class="hero-content">
+          <!-- Left Column: Typography Block -->
+          <div class="hero-left fade-in-up">
+            <div class="hero-badge-row">
+              <span class="hero-badge">
+                <span class="badge-dot"></span>
+                EST. 2018 • BIJAULI ROAD, AURANGABAD
+              </span>
+              <span class="hero-badge" style="border-color: rgba(52, 211, 153, 0.3);">
+                AC BANQUET & OPEN LAWNS
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Grand Celebrations, <br>
+              <span class="title-highlight">Unforgettable Memories</span> <br>
+              in Aurangabad.
+            </h1>
+
+            <p class="hero-subtitle">
+              Where sacred wedding vows, festive sangeets, and joyful family gatherings unfold across sprawling open-air lawns, climate-controlled banquet halls, and warm hospitality.
+            </p>
+
+            <div class="hero-actions">
+              <!-- Special UI Component: Interactive Action Button -->
+              <button class="btn-action btn-action-emerald" onclick="document.getElementById('openEnquiryModalBtn').click()">
+                <span>Plan Your Celebration</span>
+                <div class="btn-icon-wrapper">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </button>
+
+              <a href="#gallery" class="btn-glass">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                <span>View Real Photos</span>
+              </a>
+            </div>
+
+            <div class="hero-verified-bar">
+              <span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                Near G.D. Goenka School
+              </span>
+              <span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                Direct Owner Booking
+              </span>
+              <span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                Zero Hidden Charges
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Vertical Stack of Glass Stat Cards -->
+          <div class="hero-right fade-in-up fade-delay-1">
+            <div class="glass-stat-card">
+              <div class="stat-metric">
+                7<span class="stat-accent">+</span> <span style="font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.7);">Years</span>
+              </div>
+              <div class="stat-desc">Serving Aurangabad with premier hospitality & celebration traditions since 2018.</div>
+            </div>
+
+            <div class="glass-stat-card">
+              <div class="stat-metric">
+                AC <span class="stat-accent">&</span> Lawn
+              </div>
+              <div class="stat-desc">Both climate-controlled grand banquet halls & lush open-air party grounds.</div>
+            </div>
+
+            <div class="glass-stat-card">
+              <div class="stat-metric">
+                1,000<span class="stat-accent">+</span>
+              </div>
+              <div class="stat-desc">Weddings, rings ceremonies, receptions & milestone parties hosted.</div>
+            </div>
+
+            <div class="glass-stat-card">
+              <div class="stat-metric">
+                4.2<span class="stat-accent">★</span>
+              </div>
+              <div class="stat-desc">1,100+ public ratings across Google Maps and verified regional listings.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FEATURE GRID: Clean Structured Light-Mode Feature Set
+         Two-column layout. Left: Sticky header + 2x3 grid. Right: Display card + floating glass System Analysis.
+         ======================================================================= -->
+    <section class="feature-section site-container" id="spaces">
+      <div class="feature-wrapper">
+        <div class="feature-grid-layout">
+          
+          <!-- Left Column: Sticky Header & 2x3 Amenity Grid -->
+          <div class="feature-left">
+            <div class="feature-sticky-header">
+              <span class="text-label">VERIFIED VENUE CAPABILITIES</span>
+              <h2 class="feature-heading">Curated Spaces for Life’s Grandest Milestones.</h2>
+              <p class="feature-description">
+                Whether orchestrating a royal wedding procession or hosting an intimate family banquet, Bandhan Resort balances expansive outdoor grounds with opulent indoor comfort.
+              </p>
+            </div>
+
+            <div class="feature-amenities-grid" id="amenityGrid">
+              
+              <!-- 1. AC Banquet Hall -->
+              <div class="amenity-card is-active" data-space-key="banquet" data-img="assets/images/bandhan-resort-banquet.jpg" data-title="Grand AC Banquet Hall" data-badge="INDOOR • CLIMATE CONTROLLED">
+                <div class="amenity-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 7v14M21 7v14M6 7V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3M9 11h6M9 15h6"></path></svg>
+                </div>
+                <div class="amenity-info">
+                  <h4>Grand AC Banquet Hall</h4>
+                  <p>Spacious, fully air-conditioned ballroom with high ceilings, chandeliers, and polished floors.</p>
+                </div>
+              </div>
+
+              <!-- 2. Wedding Lawn -->
+              <div class="amenity-card" data-space-key="lawn" data-img="assets/images/bandhan-resort-lawn.jpg" data-title="Open-Air Celebration Lawn" data-badge="OUTDOOR • MANICURED GREENS">
+                <div class="amenity-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                </div>
+                <div class="amenity-info">
+                  <h4>Sprawling Open Lawn</h4>
+                  <p>Expansive emerald green lawns ideal for grand mandaps, dining setups, and evening starlight events.</p>
+                </div>
+              </div>
+
+              <!-- 3. Mandap & Stage Setup -->
+              <div class="amenity-card" data-space-key="stage" data-img="assets/images/bandhan-resort-lawn.jpg" data-title="Custom Stage & Mandap Decor" data-badge="STAGE • CUSTOM LIGHTING">
+                <div class="amenity-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <div class="amenity-info">
+                  <h4>Stage & Floral Architecture</h4>
+                  <p>Dedicated focal stages engineered for wedding garlands, royal thrones, photography, and music.</p>
+                </div>
+              </div>
+
+              <!-- 4. Outdoor Courtyard Dining -->
+              <div class="amenity-card" data-space-key="dining" data-img="assets/images/bandhan-resort-dining.jpg" data-title="Courtyard & Pergola Dining" data-badge="DINING • OPEN AMBIANCE">
+                <div class="amenity-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"></path></svg>
+                </div>
+                <div class="amenity-info">
+                  <h4>Outdoor Seating & Dining</h4>
+                  <p>Charming pergola-lit courtyard and garden areas for buffet dinners, guest conversation, and high tea.</p>
+                </div>
+              </div>
+
+              <!-- 5. Children's Play Zone -->
+              <div class="amenity-card" data-space-key="play" data-img="assets/images/bandhan-resort-play.jpg" data-title="Children's Activity Play Garden" data-badge="FAMILY • SAFE RECREATION">
+                <div class="amenity-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"></path></svg>
+                </div>
+                <div class="amenity-info">
+                  <h4>Children's Play Zone</h4>
+                  <p>Dedicated, safe garden play area with wooden swings and slides to keep younger guests delighted.</p>
+                </div>
+              </div>
+
+              <!-- 6. Guest Suites -->
+              <div class="amenity-card" data-space-key="room" data-img="assets/images/bandhan-resort-room.jpg" data-title="Host & Guest Accommodation Suites" data-badge="ACCOMMODATION • PRIVATE REST">
+                <div class="amenity-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"></path></svg>
+                </div>
+                <div class="amenity-info">
+                  <h4>Guest Stays & Suites</h4>
+                  <p>Comfortable on-premise rooms for bridal preparations, host families, and outstation attendees.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Large Display Card with 105% Hover Scale & Floating Glass System Analysis -->
+          <div class="feature-right">
+            <div class="display-card" id="activeDisplayCard">
+              <div class="display-image-container">
+                <img src="assets/images/bandhan-resort-banquet.jpg" alt="Grand AC Banquet Hall at Bandhan Resort" class="display-image" id="spaceDisplayImg">
+                <div class="display-image-gradient"></div>
+              </div>
+
+              <div class="display-card-badge" id="spaceDisplayBadge">
+                <span class="badge-dot" style="background: var(--color-emerald); width: 6px; height: 6px; border-radius: 50%;"></span>
+                <span id="spaceBadgeText">INDOOR • CLIMATE CONTROLLED</span>
+              </div>
+
+              <!-- Floating Glass 'System Analysis' Component -->
+              <div class="floating-system-analysis">
+                <div class="analysis-header">
+                  <div class="analysis-title">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    <span>VENUE READINESS METRICS</span>
+                  </div>
+                  <span class="analysis-status-pill">● ACTIVE & VERIFIED</span>
+                </div>
+
+                <div class="analysis-metrics">
+                  <div class="metric-row">
+                    <div class="metric-labels">
+                      <span>Air Conditioning & Climate Comfort</span>
+                      <strong style="color: var(--color-emerald);">100% Calibrated</strong>
+                    </div>
+                    <div class="metric-bar-bg">
+                      <div class="metric-bar-fill" style="width: 100%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="metric-row">
+                    <div class="metric-labels">
+                      <span>Ambient & Stage Illumination</span>
+                      <strong style="color: var(--color-emerald);">Warm Dimmable</strong>
+                    </div>
+                    <div class="metric-bar-bg">
+                      <div class="metric-bar-fill" style="width: 95%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="metric-row">
+                    <div class="metric-labels">
+                      <span>Generator & Power Redundancy</span>
+                      <strong style="color: var(--color-emerald);">24/7 Dual Backup</strong>
+                    </div>
+                    <div class="metric-bar-bg">
+                      <div class="metric-bar-fill" style="width: 100%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="metric-row">
+                    <div class="metric-labels">
+                      <span>Guest Flow & Secure Parking</span>
+                      <strong style="color: var(--color-emerald);">On-Site Valet Ready</strong>
+                    </div>
+                    <div class="metric-bar-bg">
+                      <div class="metric-bar-fill" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         DARK PRODUCTIVITY / CELEBRATION BLOCK
+         Full-width section with #18181B background.
+         Grayscale grid lineart overlay.
+         2-column. Left: numbered steps (01, 02, 03).
+         Right: 3D-transformed mock-up window (rotated 3 deg) with internal glass snippets & bounce tag.
+         ======================================================================= -->
+    <section class="flow-section site-container" id="experience">
+      <div class="flow-wrapper">
+        <div class="flow-grid-overlay" aria-hidden="true"></div>
+
+        <div class="flow-content">
+          <!-- Left: Numbered Steps in Rounded-2xl Boxes -->
+          <div class="flow-left">
+            <span class="text-label">THE HOSTING ARCHITECTURE</span>
+            <h2 class="flow-heading">Seamless Celebrations from First Tour to Final Farewell.</h2>
+            <p class="flow-subheading">
+              Planning a wedding or milestone banquet should be joyful, not stressful. We streamline every detail with transparent communication, verified venue access, and dependable on-ground management.
+            </p>
+
+            <div class="flow-steps">
+              <!-- Step 01 -->
+              <div class="flow-step-box">
+                <div class="flow-step-num">01</div>
+                <div class="flow-step-body">
+                  <h4>Venue Consultation & Space Tailoring</h4>
+                  <p>Walk through the property, evaluate your guest count, and choose between the grand AC Banquet Hall, the open-air Lawn, or an integrated indoor-outdoor package.</p>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="flow-step-box">
+                <div class="flow-step-num">02</div>
+                <div class="flow-step-body">
+                  <h4>Staging, Decor & Illumination Planning</h4>
+                  <p>Align stage decor, seating arrangements, buffet stations, and fairy-light canopies tailored to your religious or cultural traditions.</p>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="flow-step-box">
+                <div class="flow-step-num">03</div>
+                <div class="flow-step-body">
+                  <h4>Flawless Event Execution & Hospitality</h4>
+                  <p>Our dedicated on-site venue team oversees generator readiness, parking management, and guest comfort so you can immerse yourself in the celebration.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3D-Transformed Mockup Window (rotated 3 degrees) -->
+          <div class="flow-right">
+            <div class="mockup-window-3d">
+              <div class="mockup-titlebar">
+                <div class="mockup-dots">
+                  <div class="mockup-dot dot-red"></div>
+                  <div class="mockup-dot dot-yellow"></div>
+                  <div class="mockup-dot dot-green"></div>
+                </div>
+                <div class="mockup-title">bandhan-event-control.protocol</div>
+                <div style="width: 30px;"></div>
+              </div>
+
+              <div class="mockup-body">
+                <div class="mockup-timeline-item">
+                  <div class="mockup-time-badge">04:00 PM</div>
+                  <div class="mockup-event-desc">
+                    <strong>Bridal Suite & Vendor Entry</strong><br>
+                    <span style="font-size: 0.76rem; color: var(--color-zinc-400);">Rooms pre-cooled; floral decorator access granted.</span>
+                  </div>
+                </div>
+
+                <div class="mockup-timeline-item">
+                  <div class="mockup-time-badge">06:30 PM</div>
+                  <div class="mockup-event-desc">
+                    <strong>Baraat Reception & Welcome Drinks</strong><br>
+                    <span style="font-size: 0.76rem; color: var(--color-zinc-400);">Lawn gate illuminated; garden refreshments active.</span>
+                  </div>
+                </div>
+
+                <div class="mockup-timeline-item">
+                  <div class="mockup-time-badge">08:00 PM</div>
+                  <div class="mockup-event-desc">
+                    <strong>Jaimala & Stage Ceremonies</strong><br>
+                    <span style="font-size: 0.76rem; color: var(--color-zinc-400);">Main stage sound configured; ambient chandeliers dimmed.</span>
+                  </div>
+                </div>
+
+                <!-- Glassmorphic Code Snippet -->
+                <div class="mockup-code-block">
+                  <span class="code-dim">// Bandhan Venue Verification Hook</span><br>
+                  <span class="code-green">status</span>: <span style="color: #60a5fa;">"OPERATIONAL_READY"</span>;<br>
+                  <span class="code-green">powerBackup</span>: <span style="color: #facc15;">"DUAL_GENSET_STANDBY"</span>;<br>
+                  <span class="code-green">coolingMode</span>: <span style="color: #60a5fa;">"OPTIMAL_COMFORT_22C"</span>;<br>
+                  <span class="code-green">bookingChannel</span>: <span style="color: var(--color-emerald);">"DIRECT_OWNER_CONFIRMED"</span>;
+                </div>
+              </div>
+
+              <!-- Bounce Animated Status Tag at Bottom-Right -->
+              <div class="mockup-bounce-tag">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-zinc-950); display: inline-block;"></span>
+                <span>VENUE OPEN • DATES AVAILABLE</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PRICING & PACKAGES: Bento Grid
+         3-column grid of cards. White background, 2rem radius, thin zinc-100 border.
+         Top half: Image with gradient-to-black. Bottom half: features + action button.
+         ======================================================================= -->
+    <section class="pricing-section site-container" id="packages">
+      <div class="pricing-header">
+        <span class="text-label">TRANSPARENT PACKAGES</span>
+        <h2 class="pricing-title">Celebration & Gathering Frameworks.</h2>
+        <p class="pricing-subtitle">
+          Every celebration is unique. We provide structured venue configurations tailored to your guest size with direct owner consultation and zero hidden booking fees.
+        </p>
+      </div>
+
+      <div class="pricing-bento-grid">
+        
+        <!-- Bento Card 1: Weddings & Receptions (Featured) -->
+        <div class="bento-card bento-featured">
+          <div class="bento-featured-ribbon">Most Requested</div>
+          <div class="bento-top-media">
+            <img src="assets/images/bandhan-resort-lawn.jpg" alt="Wedding lawn setup at Bandhan Resort" class="bento-top-img">
+            <div class="bento-top-gradient">
+              <h3 class="bento-package-title">Grand Wedding & Reception</h3>
+            </div>
+          </div>
+          <div class="bento-bottom-content">
+            <div class="bento-price-tag">
+              <span class="bento-price-val">Bespoke Quote</span>
+              <span class="bento-price-sub">per guest capacity & dates</span>
+            </div>
+            <ul class="bento-features-list">
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Full access to Sprawling Wedding Lawn & Grand AC Banquet Hall</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Dedicated Main Jaimala / Reception Stage setup area</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Complimentary Host/Bridal preparation room on event day</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>24/7 Redundant generator power backup included</span>
+              </li>
+            </ul>
+            <button class="btn-action btn-action-emerald btn-action-full" onclick="prefillAndOpenModal('Wedding & Grand Reception')">
+              <span>Enquire Wedding Dates</span>
+              <div class="btn-icon-wrapper">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bento Card 2: Sangeet, Engagement & Parties -->
+        <div class="bento-card">
+          <div class="bento-top-media">
+            <img src="assets/images/bandhan-resort-banquet.jpg" alt="Banquet hall setup for engagement and sangeet" class="bento-top-img">
+            <div class="bento-top-gradient">
+              <h3 class="bento-package-title">Engagement, Sangeet & Birthdays</h3>
+            </div>
+          </div>
+          <div class="bento-bottom-content">
+            <div class="bento-price-tag">
+              <span class="bento-price-val">Custom Package</span>
+              <span class="bento-price-sub">flexible half-day / evening slots</span>
+            </div>
+            <ul class="bento-features-list">
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Air-conditioned Banquet Hall with crystal chandelier ambience</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>High-performance sound setup integration for musical celebrations</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Banquet dining tables and round chair configurations</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Safe parking and welcoming guest reception foyer</span>
+              </li>
+            </ul>
+            <button class="btn-action btn-action-dark btn-action-full" onclick="prefillAndOpenModal('Engagement / Sangeet / Birthday')">
+              <span>Check Hall Availability</span>
+              <div class="btn-icon-wrapper">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bento Card 3: Family Gatherings & Residential Stay -->
+        <div class="bento-card">
+          <div class="bento-top-media">
+            <img src="assets/images/bandhan-resort-dining.jpg" alt="Outdoor courtyard dining at Bandhan Resort" class="bento-top-img">
+            <div class="bento-top-gradient">
+              <h3 class="bento-package-title">Family Gatherings & Stays</h3>
+            </div>
+          </div>
+          <div class="bento-bottom-content">
+            <div class="bento-price-tag">
+              <span class="bento-price-val">Direct Tariff</span>
+              <span class="bento-price-sub">room & lawn combinations</span>
+            </div>
+            <ul class="bento-features-list">
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Garden pergola and illuminated courtyard seating</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Full access to children's play area with swings and slides</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Comfortable guest rooms for overnight or multi-day stays</span>
+              </li>
+              <li class="bento-feature-item">
+                <svg class="bento-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Tranquil setting away from city traffic near Bijauli Road</span>
+              </li>
+            </ul>
+            <button class="btn-action btn-action-dark btn-action-full" onclick="prefillAndOpenModal('Family Gathering & Guest Stay')">
+              <span>Enquire Stays & Dining</span>
+              <div class="btn-icon-wrapper">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PHOTO GALLERY SHOWCASE (Filter Tabs & Accessible Lightbox)
+         ======================================================================= -->
+    <section class="gallery-section site-container" id="gallery">
+      <div class="gallery-wrapper">
+        <div class="gallery-header">
+          <div>
+            <span class="text-label">AUTHENTIC VISUAL ARCHIVE</span>
+            <h2 style="font-size: clamp(2rem, 3.5vw, 3.2rem); color: var(--color-white); margin-top: 0.5rem;">
+              Property & Celebration Gallery
+            </h2>
+          </div>
+
+          <div class="gallery-filters" id="galleryFilterGroup">
+            <button class="gallery-filter-btn is-active" data-filter="all">All Spaces</button>
+            <button class="gallery-filter-btn" data-filter="exterior">Exterior & Lawn</button>
+            <button class="gallery-filter-btn" data-filter="banquet">Banquet Hall</button>
+            <button class="gallery-filter-btn" data-filter="dining">Courtyard Dining</button>
+            <button class="gallery-filter-btn" data-filter="play">Play Zone</button>
+            <button class="gallery-filter-btn" data-filter="room">Guest Suite</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          
+          <!-- Image 1 -->
+          <div class="gallery-item" data-category="exterior" data-full="assets/images/bandhan-resort-exterior.jpg" data-caption="Grand Architectural Facade & Twilight Lawn at Bandhan Resort">
+            <img src="assets/images/bandhan-resort-exterior.jpg" alt="Bandhan Resort illuminated facade and manicured lawn" class="gallery-item-img">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-cat">Exterior & Gardens</span>
+              <h3 class="gallery-item-title">Resort Facade & Celebration Lawn</h3>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="gallery-item" data-category="banquet" data-full="assets/images/bandhan-resort-banquet.jpg" data-caption="Air-Conditioned Grand Banquet Ballroom with Chandeliers & Stage">
+            <img src="assets/images/bandhan-resort-banquet.jpg" alt="Air-conditioned Banquet hall with crystal chandeliers" class="gallery-item-img">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-cat">Indoor Ballroom</span>
+              <h3 class="gallery-item-title">Grand AC Banquet Hall</h3>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="gallery-item" data-category="exterior" data-full="assets/images/bandhan-resort-lawn.jpg" data-caption="Starlit Wedding Lawn with Floral Mandap and Tree Fairy Lights">
+            <img src="assets/images/bandhan-resort-lawn.jpg" alt="Outdoor wedding lawn setup with illuminated mandap" class="gallery-item-img">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-cat">Open-Air Venue</span>
+              <h3 class="gallery-item-title">Evening Wedding Mandap Lawn</h3>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="gallery-item" data-category="dining" data-full="assets/images/bandhan-resort-dining.jpg" data-caption="Pergola Garden Courtyard with Ambient String Lighting">
+            <img src="assets/images/bandhan-resort-dining.jpg" alt="Pergola lit courtyard dining at Bandhan Resort" class="gallery-item-img">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-cat">Alfresco Ambiance</span>
+              <h3 class="gallery-item-title">Courtyard & Pergola Dining</h3>
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div class="gallery-item" data-category="play" data-full="assets/images/bandhan-resort-play.jpg" data-caption="Dedicated Family Pavilion & Children's Garden Play Park">
+            <img src="assets/images/bandhan-resort-play.jpg" alt="Children's activity playground and family gazebo" class="gallery-item-img">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-cat">Family & Kids</span>
+              <h3 class="gallery-item-title">Children's Play Park & Pavilion</h3>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="gallery-item" data-category="room" data-full="assets/images/bandhan-resort-room.jpg" data-caption="Contemporary Guest Suite with Garden Views">
+            <img src="assets/images/bandhan-resort-room.jpg" alt="Modern hotel room interior at Bandhan Resort" class="gallery-item-img">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-cat">Guest Stays</span>
+              <h3 class="gallery-item-title">Comfortable Guest Accommodation</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessible Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo View">
+      <div class="lightbox-content-box">
+        <button class="lightbox-btn-close" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         LOCATION & DIRECTIONS SECTION
+         Verified Address: Near G.D. Goenka School, Bijauli Road, Aurangabad, Bihar 824101
+         ======================================================================= -->
+    <section class="location-section site-container" id="location">
+      <div class="location-wrapper">
+        <div class="location-grid">
+          
+          <div class="location-info">
+            <span class="text-label">PRIME CONNECTIVITY</span>
+            <h2>Arrive with Complete Peace of Mind.</h2>
+            <p style="color: var(--color-zinc-600); font-size: 1.05rem;">
+              Conveniently situated along Bijauli Road in Aurangabad, Bihar, Bandhan Resort offers ample breathing room, expansive lawns, and straightforward access for wedding guests and visiting families.
+            </p>
+
+            <div class="location-address-card">
+              <div class="address-row">
+                <div class="address-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="address-text">
+                  <h5>Bandhan Resort</h5>
+                  <p>Near G.D. Goenka School, Bijauli Road, Aurangabad, Bihar — 824101</p>
+                </div>
+              </div>
+
+              <div class="address-row">
+                <div class="address-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="address-text">
+                  <h5>Verified Contact Numbers</h5>
+                  <p>Direct: <a href="tel:+919470273100" style="color: var(--color-zinc-900); font-weight: 600; text-decoration: none;">+91 94702 73100</a> &bull; Alternate: <a href="tel:07383226422" style="color: var(--color-zinc-900); font-weight: 600; text-decoration: none;">07383226422</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://www.google.com/maps/place/Bandhan+Resort/@24.7355447,84.3459306,17z/data=!3m1!4b1!4m6!3m5!1s0x398cffb3ddc700e5:0xf0bf348a6b41650e!8m2!3d24.7355398!4d84.3485055!16s%2Fg%2F11ghqcb6xz" target="_blank" rel="noopener noreferrer" class="btn-action btn-action-dark">
+                <span>Open in Google Maps</span>
+                <div class="btn-icon-wrapper">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </div>
+              </a>
+
+              <a href="https://wa.me/919470273100?text=Hello%20Bandhan%20Resort,%20could%20you%20please%20share%20directions%20and%20location%20pin?" target="_blank" rel="noopener noreferrer" class="btn-action btn-action-emerald">
+                <span>Request WhatsApp Pin</span>
+                <div class="btn-icon-wrapper">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Map Card -->
+          <div class="map-card">
+            <iframe class="map-iframe" title="Google Map location of Bandhan Resort Aurangabad" src="https://maps.google.com/maps?q=24.7355398,84.3485055&hl=en&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         INTERACTIVE ENQUIRY MODAL (With real WhatsApp message builder)
+         ======================================================================= -->
+    <div class="modal-overlay" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="enquiryModalTitle">
+      <div class="modal-box">
+        <button class="modal-close-btn" id="closeEnquiryModalBtn" aria-label="Close Enquiry Dialog">&times;</button>
+        
+        <div style="margin-bottom: 1.5rem;">
+          <span class="text-label">DIRECT VENUE ENQUIRY</span>
+          <h3 id="enquiryModalTitle" style="font-size: 1.6rem; color: var(--color-white); margin-top: 0.35rem;">Plan Your Occasion at Bandhan Resort</h3>
+          <p style="font-size: 0.85rem; color: var(--color-zinc-400); margin-top: 0.25rem;">
+            Fill in your preferred date and requirements. You can submit directly via WhatsApp with all details pre-formatted, or call the management directly.
+          </p>
+        </div>
+
+        <form id="enquiryForm">
+          <div class="form-group">
+            <label class="form-label" for="guestName">Your Full Name *</label>
+            <input type="text" id="guestName" class="form-input" placeholder="e.g. Rahul Kumar" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="guestPhone">Contact Phone Number *</label>
+              <input type="tel" id="guestPhone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="eventType">Occasion / Service *</label>
+              <select id="eventType" class="form-select" required>
+                <option value="Wedding & Grand Reception">Wedding & Grand Reception</option>
+                <option value="Engagement / Sangeet / Birthday">Engagement / Sangeet / Birthday</option>
+                <option value="Family Gathering & Guest Stay">Family Gathering & Guest Stay</option>
+                <option value="AC Banquet Hall Only">AC Banquet Hall Only</option>
+                <option value="Open Wedding Lawn Only">Open Wedding Lawn Only</option>
+                <option value="General Information / Visit Tour">General Information / Visit Tour</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="preferredDate">Preferred Date (Optional)</label>
+              <input type="date" id="preferredDate" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="guestCount">Estimated Guests (Optional)</label>
+              <input type="number" id="guestCount" class="form-input" placeholder="e.g. 350" min="10">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="specialMessage">Special Requirements / Notes</label>
+            <textarea id="specialMessage" class="form-textarea" rows="3" placeholder="Tell us about catering preference, stage decor, or room count..."></textarea>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+            <button type="submit" class="btn-action btn-action-emerald btn-action-full">
+              <span>Send Enquiry via WhatsApp</span>
+              <div class="btn-icon-wrapper">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </button>
+
+            <a href="tel:+919470273100" class="btn-glass" style="justify-content: center; width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Or Call Directly: +91 94702 73100</span>
+            </a>
+          </div>
+
+          <p style="font-size: 0.75rem; color: var(--color-zinc-500); text-align: center; margin-top: 1rem;">
+            We respect your privacy. Inquiries connect directly to Bandhan Resort official representative.
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- =======================================================================
+       SITE FOOTER
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link" style="margin-bottom: 0.75rem;">
+            <div class="brand-icon">B</div>
+            <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
+          </div>
+          <p>
+            Aurangabad’s premier destination for weddings, banquets, and serene family stays since 2018. Lush lawns, grand air-conditioned ballrooms, and dedicated hospitality.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Venue Spaces</h4>
+          <ul class="footer-links">
+            <li><a href="#spaces">Grand AC Banquet Hall</a></li>
+            <li><a href="#spaces">Open-Air Wedding Lawn</a></li>
+            <li><a href="#spaces">Courtyard Pergola Dining</a></li>
+            <li><a href="#spaces">Children's Play Garden</a></li>
+            <li><a href="#spaces">Guest Stays & Suites</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Location</h4>
+          <ul class="footer-links">
+            <li>Near G.D. Goenka School, Bijauli Road</li>
+            <li>Aurangabad, Bihar — 824101</li>
+            <li><a href="tel:+919470273100">Primary: +91 94702 73100</a></li>
+            <li><a href="tel:07383226422">Alternate: 07383226422</a></li>
+            <li><a href="https://wa.me/919470273100" target="_blank" rel="noopener noreferrer">WhatsApp Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear"></span> Bandhan Resort, Aurangabad, Bihar. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#hero" style="color: var(--color-zinc-400); text-decoration: none;">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Master JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

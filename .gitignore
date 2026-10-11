@@ -1,0 +1,9 @@
+# System & IDE files
+.agents/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.vscode/
+.idea/
