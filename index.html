@@ -64,16 +64,17 @@
     <nav class="glass-navbar" aria-label="Main Navigation">
       <a href="#hero" class="brand-link">
         <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort Emblem" class="brand-logo-img">
-        <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
-        <span class="brand-badge">AURANGABAD</span>
+        <div class="brand-text-group">
+          <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
+          <span class="brand-subtext">ROYAL WEDDINGS &bull; STAY</span>
+        </div>
       </a>
 
       <ul class="nav-links">
         <li class="nav-item"><a href="#spaces">Spaces & Amenities</a></li>
         <li class="nav-item"><a href="#experience">Celebration Flow</a></li>
         <li class="nav-item"><a href="#packages">Packages</a></li>
-        <li class="nav-item"><a href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a href="gallery.html" style="color: var(--color-emerald); font-weight: 600;">All Photos (28) ↗</a></li>
+        <li class="nav-item"><a href="gallery.html" style="color: var(--color-emerald); font-weight: 600;">Full Gallery (28) &rarr;</a></li>
         <li class="nav-item"><a href="#location">Directions</a></li>
       </ul>
 
@@ -85,7 +86,7 @@
 
         <!-- Interactive Action Button (Pill with nested circular icon) -->
         <button class="btn-action" id="openEnquiryModalBtn">
-          <span>Enquire Now</span>
+          <span>Enquire Dates</span>
           <div class="btn-icon-wrapper">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </div>
@@ -102,9 +103,12 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-top">
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <div style="display: flex; align-items: center; gap: 0.85rem;">
         <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort Emblem" class="brand-logo-img">
-        <div style="font-size: 1.15rem; font-weight: 700; color: #fff;">BANDHAN RESORT</div>
+        <div class="brand-text-group">
+          <div class="brand-text" style="font-size: 1.15rem; font-weight: 700; color: #fff;">BANDHAN <span style="font-weight: 300;">RESORT</span></div>
+          <span class="brand-subtext">ROYAL WEDDINGS &bull; STAY</span>
+        </div>
       </div>
       <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
     </div>
@@ -137,8 +141,8 @@
          ======================================================================= -->
     <section class="hero-wrapper site-container" id="hero">
       <div class="hero-container">
-        <!-- High-res Resort Exterior Background Image -->
-        <img src="assets/images/bandhan-resort-exterior.jpg" alt="Bandhan Resort illuminated facade and manicured lawn at twilight" class="hero-bg-media">
+        <!-- Authentic Real Resort Facade & Entrance Background Photo -->
+        <img src="assets/images/real/palace-entrance.jpg" alt="Bandhan Resort illuminated royal entrance and palace facade at night" class="hero-bg-media">
         
         <!-- Gradient Overlay: zinc-950/40 to zinc-950/90 -->
         <div class="hero-gradient-overlay"></div>
@@ -904,12 +908,15 @@
     <div class="site-container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="brand-link" style="margin-bottom: 0.75rem;">
-            <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort" class="brand-logo-img">
-            <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
+          <div class="footer-brand-header">
+            <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort" class="footer-logo-img">
+            <div>
+              <div class="brand-text" style="font-size: 1.35rem; font-weight: 700;">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
+              <span class="brand-subtext" style="display: block; margin-top: 3px;">ROYAL WEDDINGS &bull; STAY</span>
+            </div>
           </div>
           <p>
-            Aurangabad’s premier destination for weddings, banquets, and serene family stays since 2018. Lush lawns, grand air-conditioned ballrooms, and dedicated hospitality.
+            Aurangabad’s premier destination for weddings, banquets, and serene family stays since 2018. Lush lawns, grand air-conditioned ballrooms, and dedicated hospitality near G.D. Goenka School, Bijauli Road.
           </p>
         </div>
 
@@ -937,12 +944,19 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div>
-          &copy; <span id="currentYear"></span> Bandhan Resort, Aurangabad, Bihar. All rights reserved.
+      <!-- Centered All Rights Reserved and AC Custom Labs Credit -->
+      <div class="footer-bottom-centered">
+        <p class="copyright-line">
+          &copy; <span id="currentYear"></span> Bandhan Resort, Aurangabad, Bihar. All Rights Reserved.
+        </p>
+        <div class="developer-credit-bar">
+          <span class="developer-credit-text">Designed &amp; Developed by</span>
+          <a href="#" class="developer-logo-link" title="AC Custom Labs" aria-label="AC Custom Labs">
+            <img src="assets/images/ac-custom-labs-logo.png" alt="AC Custom Labs" class="ac-custom-labs-img">
+          </a>
         </div>
-        <div style="display: flex; gap: 1.5rem;">
-          <a href="#hero" style="color: var(--color-zinc-400); text-decoration: none;">Back to Top ↑</a>
+        <div>
+          <a href="#hero" style="color: var(--color-zinc-500); font-size: 0.8rem; text-decoration: none; transition: color 200ms ease;">Back to Top &uarr;</a>
         </div>
       </div>
     </div>

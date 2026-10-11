@@ -310,13 +310,13 @@ p {
    ========================================================================== */
 .header-wrapper {
   position: fixed;
-  top: 1.25rem;
+  top: 1rem;
   left: 0;
   right: 0;
   z-index: 100;
   display: flex;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0 1.25rem;
   pointer-events: none;
 }
 
@@ -325,60 +325,69 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
-  background: rgba(10, 10, 12, 0.65);
+  gap: 1.25rem;
+  background: rgba(10, 10, 14, 0.75);
   backdrop-filter: blur(var(--glass-blur-heavy));
   -webkit-backdrop-filter: blur(var(--glass-blur-heavy));
   border: var(--glass-border);
   border-radius: var(--radius-full);
-  padding: 0.45rem 0.6rem 0.45rem 1.4rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  max-width: 1100px;
+  padding: 0.45rem 0.65rem 0.45rem 1.25rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(52, 211, 153, 0.05);
+  max-width: 1260px;
   width: 100%;
   transition: all var(--transition-hover);
 }
 
 .navbar-scrolled .glass-navbar {
-  background: rgba(10, 10, 12, 0.85);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  background: rgba(10, 10, 14, 0.92);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
 }
 
 .brand-link {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
   text-decoration: none;
   color: var(--color-white);
+  flex-shrink: 0;
 }
 
 .brand-logo-img {
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.45));
+  filter: drop-shadow(0 0 14px rgba(212, 175, 55, 0.45));
   transition: transform var(--transition-hover);
 }
 
 .brand-link:hover .brand-logo-img {
-  transform: scale(1.08) rotate(-3deg);
+  transform: scale(1.06) rotate(-2deg);
 }
 
-.brand-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
+.brand-text-group {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  gap: 2px;
 }
 
 .brand-text {
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--color-white);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.brand-subtext {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-emerald);
+  line-height: 1;
 }
 
 .brand-badge {
@@ -387,19 +396,22 @@ p {
   letter-spacing: 0.1em;
   background: rgba(52, 211, 153, 0.15);
   color: var(--color-emerald);
-  padding: 0.15rem 0.4rem;
+  padding: 0.15rem 0.45rem;
   border-radius: var(--radius-full);
   border: 1px solid rgba(52, 211, 153, 0.25);
+  white-space: nowrap;
 }
 
 .nav-links {
   display: none;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.25rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1080px) {
   .nav-links {
     display: flex;
   }
@@ -407,24 +419,26 @@ p {
 
 .nav-item a {
   display: inline-block;
-  padding: 0.45rem 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 0.85rem;
+  color: rgba(255, 255, 255, 0.82);
   font-size: 0.88rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-item a:hover {
   color: var(--color-white);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.65rem;
+  flex-shrink: 0;
 }
 
 .nav-phone-btn {
@@ -548,7 +562,8 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.60;
+  object-position: center 36%;
+  opacity: 0.65;
   z-index: 1;
 }
 
@@ -1495,21 +1510,27 @@ p {
   position: relative;
   border-radius: var(--radius-card);
   overflow: hidden;
-  height: 280px;
+  height: 290px;
+  aspect-ratio: 16 / 10;
   cursor: pointer;
   border: var(--glass-border);
   background: var(--color-zinc-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-item-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 600ms var(--ease-smooth);
+  object-position: center center;
+  display: block;
+  transition: transform 500ms var(--ease-smooth);
 }
 
 .gallery-item:hover .gallery-item-img {
-  transform: scale(1.08);
+  transform: scale(1.04);
 }
 
 .gallery-item-overlay {
@@ -1871,10 +1892,32 @@ p {
   margin-bottom: 0.75rem;
 }
 
+/* Footer Brand Header with Large Logo */
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-logo-img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.45));
+  transition: transform var(--transition-hover);
+  flex-shrink: 0;
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.06);
+}
+
 .footer-brand p {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--color-zinc-400);
-  max-width: 420px;
+  max-width: 440px;
+  line-height: 1.6;
 }
 
 .footer-col h4 {
@@ -1904,22 +1947,72 @@ p {
   color: var(--color-emerald);
 }
 
-.footer-bottom {
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+/* Centered All Rights Reserved & AC Custom Labs Developer Credit */
+.footer-bottom-centered {
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  font-size: 0.78rem;
-  color: var(--color-zinc-500);
+  justify-content: center;
+  text-align: center;
+  gap: 1.1rem;
 }
 
-@media (min-width: 768px) {
-  .footer-bottom {
-    flex-direction: row;
-  }
+.copyright-line {
+  font-size: 0.88rem;
+  color: var(--color-zinc-400);
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.developer-credit-bar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 0.45rem 1.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.developer-credit-bar:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.developer-credit-text {
+  font-size: 0.78rem;
+  color: var(--color-zinc-400);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.developer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ac-custom-labs-img {
+  height: 24px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  vertical-align: middle;
+  filter: drop-shadow(0 2px 6px rgba(229, 9, 20, 0.3));
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.ac-custom-labs-img:hover {
+  transform: scale(1.06);
+  filter: drop-shadow(0 4px 12px rgba(229, 9, 20, 0.5));
 }
 
 /* Animations */
@@ -2103,12 +2196,12 @@ p {
   }
 
   .brand-logo-img {
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
   }
 
   .brand-text {
-    font-size: 0.95rem;
+    font-size: 1.02rem;
   }
 
   .brand-badge {
