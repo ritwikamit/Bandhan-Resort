@@ -282,58 +282,233 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Feature Grid: Interactive Space & Amenity Switcher (on index.html)
-  const amenityCards = document.querySelectorAll('.amenity-card');
-  const spaceDisplayImg = document.getElementById('spaceDisplayImg');
-  const spaceDisplayBackdrop = document.getElementById('spaceDisplayBackdrop');
+  // 4. Redesigned Venue Portfolio & Spaces Showcase Switcher (on index.html)
+  const SPACES_DATABASE = {
+    banquet: {
+      category: "AC BANQUET BALLROOM",
+      title: "Grand AC Banquet Ballroom",
+      badge: "INDOOR • GRAND CHANDELIER BALLROOM",
+      meta: "6,500 SQ. FT. • UP TO 1,200 GUESTS",
+      aspect: "portrait",
+      img: "assets/images/real/banquet-ballroom-chandelier.jpg",
+      desc: "Opulent, climate-controlled indoor ballroom designed for grand wedding receptions, sangeets, and milestone gatherings. Adorned with cathedral ceiling draping, an ornate crystal chandelier, and wide banquet seating capacity.",
+      capacity: "500 – 1,200 Guests",
+      climate: "Full AC Ducting (21&deg;C)",
+      lighting: "Crystal Chandelier & Dimmable Stage Glow",
+      power: "24/7 Dual Genset Backup",
+      highlights: [
+        "Cathedral Silk Ceiling Draping",
+        "Elevated Royal Throne Dais",
+        "Ceremonial Carpet Aisle",
+        "Vitrified Marble Flooring"
+      ],
+      btnText: "Plan Celebration in Ballroom",
+      whatsappText: "Hello Bandhan Resort, I would like to enquire about booking dates for the Grand AC Banquet Ballroom."
+    },
+    lawn: {
+      category: "OUTDOOR CELEBRATION LAWN",
+      title: "Palace Facade & Open Celebration Lawns",
+      badge: "OUTDOOR • ROYAL ILLUMINATION & LAWNS",
+      meta: "25,000+ SQ. FT. • UP TO 2,500 GUESTS",
+      aspect: "landscape",
+      img: "assets/images/real/grand-palace-hero.jpg",
+      desc: "Sprawling open-air celebration grounds framed by the illuminated palace facade and heritage jharokha pavilions. Perfect for grand baraat processions, open-air wedding ceremonies, and large receptions under starlit skies.",
+      capacity: "800 – 2,500 Guests",
+      climate: "Open-Air Natural Breeze & Lawn Foggers",
+      lighting: "Palace Facade Spotlights & Garden Fairylights",
+      power: "24/7 Dedicated Lawn Power Distribution",
+      highlights: [
+        "Palatial Heritage Jharokha Facade",
+        "Grand Baraat Arrival Gateway",
+        "Royal Sentinel Elephant Statues",
+        "Expansive Lawn Dining Layout"
+      ],
+      btnText: "Plan Celebration on Palace Lawns",
+      whatsappText: "Hello Bandhan Resort, I would like to enquire about booking dates for the Palace Facade & Open Celebration Lawns."
+    },
+    stage: {
+      category: "RECEPTION & CEREMONIAL DAIS",
+      title: "Bridal Stage & Royal Throne Dais",
+      badge: "STAGE • FLORAL THRONE DAIS",
+      meta: "ELEVATED 40-FT DAIS • PHOTOGRAPHY READY",
+      aspect: "portrait",
+      img: "assets/images/real/stage-throne-setup.jpg",
+      desc: "Grand ceremonial dais curated for jaimala rituals, ring exchanges, and bridal portraits. Featuring bespoke floral backdrops, plush velvet throne seating, and warm stage lighting reflecting on polished marble.",
+      capacity: "Focal Reception & Photo Dais",
+      climate: "Dedicated Stage Spot AC Airflow",
+      lighting: "Warm Chandelier & Focus Portrait Spotlights",
+      power: "Uninterrupted Redundant Stage Power",
+      highlights: [
+        "Custom Floral Backdrop Architecture",
+        "Royal Velvet Sofa Throne Seating",
+        "Overhead Chandelier Warm Glow",
+        "Polished Vitrified Dais Flooring"
+      ],
+      btnText: "Enquire Bridal Stage & Decor",
+      whatsappText: "Hello Bandhan Resort, I would like to enquire about booking dates and decor for the Bridal Stage & Royal Throne Dais."
+    },
+    mandap: {
+      category: "SACRED CEREMONY PAVILION",
+      title: "Traditional Vedic Wedding Mandap",
+      badge: "CEREMONY • SACRED VEDIC MANDAP",
+      meta: "SACRED ALTAR • FOUR-PILLAR PAVILION",
+      aspect: "portrait",
+      img: "assets/images/real/wedding-mandap.jpg",
+      desc: "Traditional four-pillar floral canopy and consecrated havan altar for wedding vows and sacred pheras. Crafted with authentic Vedic dignity and serene spiritual ambiance.",
+      capacity: "Wedding Rituals & Family Seating",
+      climate: "Open-Air Canopy with Fresh Air Flow",
+      lighting: "Traditional Brass Diyas & Warm Strings",
+      power: "Dedicated Ritual Sound & Lighting Lines",
+      highlights: [
+        "Traditional Four-Pillar Floral Canopy",
+        "Dedicated Sacred Havan Altar",
+        "Comfortable Immediate Family Seating",
+        "Traditional Brass Diyas & Garland Work"
+      ],
+      btnText: "Plan Sacred Wedding Mandap",
+      whatsappText: "Hello Bandhan Resort, I would like to enquire about booking dates for the Traditional Wedding Mandap."
+    },
+    dining: {
+      category: "MULTI-CUISINE DINING & COURTYARD",
+      title: "Restaurant & Paved Banquet Courtyard",
+      badge: "DINING • RESTAURANT & COURTYARD",
+      meta: "PAVED COURTYARD • UP TO 450 GUESTS",
+      aspect: "landscape",
+      img: "assets/images/real/restaurant-courtyard.jpg",
+      desc: "On-site restaurant facility and paved celebration courtyard for wedding feasts, anniversary lunches, and family buffet gatherings with dedicated catering zones.",
+      capacity: "200 – 450 Guests Dining",
+      climate: "Shaded Pergolas & Garden Planters",
+      lighting: "Warm Bistro Overhead String Illumination",
+      power: "24/7 Redundant Food Service Power",
+      highlights: [
+        "Dedicated Restaurant Facility Building",
+        "Paved Banquet Courtyard Flooring",
+        "Covered Live Buffet & Counter Lines",
+        "Garden Planters & Pergola Seating"
+      ],
+      btnText: "Enquire Dining & Catering Courtyard",
+      whatsappText: "Hello Bandhan Resort, I would like to enquire about dining and catering courtyard bookings."
+    },
+    room: {
+      category: "PRIVATE GUEST ACCOMMODATION",
+      title: "Resort Cottage Suites & Verandas",
+      badge: "ACCOMMODATION • GUEST SUITES",
+      meta: "PRIVATE COTTAGES • HOST FAMILY REST",
+      aspect: "landscape",
+      img: "assets/images/real/cottage-stay-block.jpg",
+      desc: "Peaceful cottage-style accommodation wings with private covered verandas and garden pathways. Provides quiet resting quarters for wedding families and traveling guests.",
+      capacity: "Overnight & Multi-Day Stays",
+      climate: "Independent AC in All Guest Rooms",
+      lighting: "Warm Residential Ambient Lighting",
+      power: "24/7 Redundant Power & Hot Water Backup",
+      highlights: [
+        "Private Covered Verandas with Chairs",
+        "Attached Clean Modern Bathrooms",
+        "Landscaped Garden Walkway Access",
+        "Host Family Dressing & Privacy"
+      ],
+      btnText: "Enquire Guest Rooms & Cottages",
+      whatsappText: "Hello Bandhan Resort, I would like to enquire about booking guest cottage suites for our stay."
+    }
+  };
+
+  const spacesTabBtns = document.querySelectorAll('.spaces-tab-btn');
+  const spaceReelCards = document.querySelectorAll('.space-reel-card');
+  const spaceShowcaseFrame = document.getElementById('spaceShowcaseFrame');
+  const spaceShowcaseImg = document.getElementById('spaceShowcaseImg');
   const spaceBadgeText = document.getElementById('spaceBadgeText');
+  const spaceMetaText = document.getElementById('spaceMetaText');
+  const spaceCategoryTag = document.getElementById('spaceCategoryTag');
+  const spaceTitle = document.getElementById('spaceTitle');
+  const spaceDescription = document.getElementById('spaceDescription');
+  const specCapacity = document.getElementById('specCapacity');
+  const specClimate = document.getElementById('specClimate');
+  const specLighting = document.getElementById('specLighting');
+  const specPower = document.getElementById('specPower');
+  const spaceHighlightsPills = document.getElementById('spaceHighlightsPills');
+  const spaceEnquireBtn = document.getElementById('spaceEnquireBtn');
+  const spaceWhatsappBtn = document.getElementById('spaceWhatsappBtn');
 
-  amenityCards.forEach(card => {
+  const switchSpace = (spaceKey) => {
+    const data = SPACES_DATABASE[spaceKey];
+    if (!data) return;
+
+    // Update active state in tabs & reel cards
+    spacesTabBtns.forEach(btn => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-space') === spaceKey);
+    });
+    spaceReelCards.forEach(card => {
+      card.classList.toggle('is-active', card.getAttribute('data-space') === spaceKey);
+    });
+
+    // Update aspect ratio class on showcase frame
+    if (spaceShowcaseFrame) {
+      if (data.aspect === 'landscape') {
+        spaceShowcaseFrame.classList.remove('is-portrait');
+        spaceShowcaseFrame.classList.add('is-landscape');
+      } else {
+        spaceShowcaseFrame.classList.remove('is-landscape');
+        spaceShowcaseFrame.classList.add('is-portrait');
+      }
+    }
+
+    // Fade image transition
+    if (spaceShowcaseImg) {
+      spaceShowcaseImg.style.opacity = '0.35';
+      setTimeout(() => {
+        spaceShowcaseImg.src = data.img;
+        spaceShowcaseImg.alt = data.title + ' at Bandhan Resort';
+        spaceShowcaseImg.style.opacity = '1';
+      }, 160);
+    }
+
+    // Update textual specs
+    if (spaceBadgeText) spaceBadgeText.textContent = data.badge;
+    if (spaceMetaText) spaceMetaText.textContent = data.meta;
+    if (spaceCategoryTag) spaceCategoryTag.textContent = data.category;
+    if (spaceTitle) spaceTitle.textContent = data.title;
+    if (spaceDescription) spaceDescription.textContent = data.desc;
+    if (specCapacity) specCapacity.textContent = data.capacity;
+    if (specClimate) specClimate.innerHTML = data.climate;
+    if (specLighting) specLighting.textContent = data.lighting;
+    if (specPower) specPower.textContent = data.power;
+
+    // Update highlight pills
+    if (spaceHighlightsPills && data.highlights) {
+      spaceHighlightsPills.innerHTML = data.highlights.map(h => `<span class="highlight-pill">&bull; ${h}</span>`).join('');
+    }
+
+    // Update action buttons
+    if (spaceEnquireBtn) {
+      const spanEl = spaceEnquireBtn.querySelector('span');
+      if (spanEl) spanEl.textContent = data.btnText;
+      spaceEnquireBtn.onclick = () => prefillAndOpenModal(data.title);
+    }
+
+    if (spaceWhatsappBtn) {
+      spaceWhatsappBtn.href = `https://wa.me/919431873155?text=${encodeURIComponent(data.whatsappText)}`;
+    }
+  };
+
+  spacesTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const spaceKey = btn.getAttribute('data-space');
+      switchSpace(spaceKey);
+    });
+  });
+
+  spaceReelCards.forEach(card => {
     card.addEventListener('click', () => {
-      amenityCards.forEach(c => c.classList.remove('is-active'));
-      card.classList.add('is-active');
+      const spaceKey = card.getAttribute('data-space');
+      switchSpace(spaceKey);
 
-      const newImg = card.getAttribute('data-img');
-      const newTitle = card.getAttribute('data-title');
-      const newBadge = card.getAttribute('data-badge');
-      const newAspect = card.getAttribute('data-aspect') || 'portrait';
-      const spacePhotoBox = document.getElementById('spacePhotoBox');
-
-      if (spacePhotoBox) {
-        if (newAspect === 'landscape') {
-          spacePhotoBox.classList.remove('is-portrait');
-          spacePhotoBox.classList.add('is-landscape');
-        } else {
-          spacePhotoBox.classList.remove('is-landscape');
-          spacePhotoBox.classList.add('is-portrait');
-        }
-      }
-
-      if (spaceDisplayImg && newImg) {
-        spaceDisplayImg.style.opacity = '0.35';
-        if (spaceDisplayBackdrop) spaceDisplayBackdrop.style.opacity = '0.35';
-        setTimeout(() => {
-          spaceDisplayImg.src = newImg;
-          spaceDisplayImg.alt = newTitle || 'Bandhan Resort Space';
-          spaceDisplayImg.style.opacity = '1';
-          if (spaceDisplayBackdrop) {
-            spaceDisplayBackdrop.src = newImg;
-            spaceDisplayBackdrop.style.opacity = '0.55';
-          }
-        }, 180);
-      }
-
-      if (spaceBadgeText && newBadge) {
-        spaceBadgeText.textContent = newBadge;
-      }
-
-      // Smooth scroll assist on mobile screens (< 1080px)
-      if (window.innerWidth < 1080) {
-        const displayCard = document.getElementById('activeDisplayCard');
-        if (displayCard) {
-          const rect = displayCard.getBoundingClientRect();
+      // Smooth scroll up to stage if on small screen
+      if (window.innerWidth < 1024) {
+        const stageEl = document.getElementById('activeSpaceStage');
+        if (stageEl) {
+          const rect = stageEl.getBoundingClientRect();
           if (rect.top < 0 || rect.bottom > window.innerHeight) {
-            displayCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            stageEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
           }
         }
       }
