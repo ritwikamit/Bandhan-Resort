@@ -296,6 +296,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const newImg = card.getAttribute('data-img');
       const newTitle = card.getAttribute('data-title');
       const newBadge = card.getAttribute('data-badge');
+      const newAspect = card.getAttribute('data-aspect') || 'portrait';
+      const spacePhotoBox = document.getElementById('spacePhotoBox');
+
+      if (spacePhotoBox) {
+        if (newAspect === 'landscape') {
+          spacePhotoBox.classList.remove('is-portrait');
+          spacePhotoBox.classList.add('is-landscape');
+        } else {
+          spacePhotoBox.classList.remove('is-landscape');
+          spacePhotoBox.classList.add('is-portrait');
+        }
+      }
 
       if (spaceDisplayImg && newImg) {
         spaceDisplayImg.style.opacity = '0.35';

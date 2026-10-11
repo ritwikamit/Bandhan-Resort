@@ -269,7 +269,7 @@
             <div class="feature-amenities-grid" id="amenityGrid">
               
               <!-- 1. AC Banquet Hall -->
-              <div class="amenity-card is-active" data-space-key="banquet" data-img="assets/images/real/banquet-ballroom-chandelier.jpg" data-title="Grand AC Banquet Ballroom" data-badge="INDOOR • GRAND CHANDELIER BALLROOM">
+              <div class="amenity-card is-active" data-space-key="banquet" data-aspect="portrait" data-img="assets/images/real/banquet-ballroom-chandelier.jpg" data-title="Grand AC Banquet Ballroom" data-badge="INDOOR • GRAND CHANDELIER BALLROOM">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 7v14M21 7v14M6 7V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3M9 11h6M9 15h6"></path></svg>
                 </div>
@@ -280,7 +280,7 @@
               </div>
 
               <!-- 2. Wedding Lawn & Royal Facade -->
-              <div class="amenity-card" data-space-key="lawn" data-img="assets/images/real/grand-palace-hero.jpg" data-title="Palace Facade & Open Lawn Grounds" data-badge="OUTDOOR • ROYAL ILLUMINATION">
+              <div class="amenity-card" data-space-key="lawn" data-aspect="landscape" data-img="assets/images/real/grand-palace-hero.jpg" data-title="Palace Facade & Open Lawn Grounds" data-badge="OUTDOOR • ROYAL ILLUMINATION">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
                 </div>
@@ -291,7 +291,7 @@
               </div>
 
               <!-- 3. Mandap & Stage Setup -->
-              <div class="amenity-card" data-space-key="stage" data-img="assets/images/real/stage-throne-setup.jpg" data-title="Royal Throne & Stage Setup" data-badge="STAGE • FLORAL THRONE DAIS">
+              <div class="amenity-card" data-space-key="stage" data-aspect="portrait" data-img="assets/images/real/stage-throne-setup.jpg" data-title="Royal Throne & Stage Setup" data-badge="STAGE • FLORAL THRONE DAIS">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 </div>
@@ -302,7 +302,7 @@
               </div>
 
               <!-- 4. Outdoor Courtyard Dining -->
-              <div class="amenity-card" data-space-key="dining" data-img="assets/images/real/restaurant-courtyard.jpg" data-title="Restaurant & Courtyard Dining" data-badge="DINING • RESTAURANT COURTYARD">
+              <div class="amenity-card" data-space-key="dining" data-aspect="landscape" data-img="assets/images/real/restaurant-courtyard.jpg" data-title="Restaurant & Courtyard Dining" data-badge="DINING • RESTAURANT COURTYARD">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"></path></svg>
                 </div>
@@ -313,7 +313,7 @@
               </div>
 
               <!-- 5. Sacred Wedding Mandap -->
-              <div class="amenity-card" data-space-key="mandap" data-img="assets/images/real/wedding-mandap.jpg" data-title="Traditional Wedding Mandap" data-badge="CEREMONY • SACRED MANDAP">
+              <div class="amenity-card" data-space-key="mandap" data-aspect="portrait" data-img="assets/images/real/wedding-mandap.jpg" data-title="Traditional Wedding Mandap" data-badge="CEREMONY • SACRED MANDAP">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"></path></svg>
                 </div>
@@ -324,7 +324,7 @@
               </div>
 
               <!-- 6. Guest Suites -->
-              <div class="amenity-card" data-space-key="room" data-img="assets/images/real/cottage-stay-block.jpg" data-title="Resort Cottage Wing & Verandas" data-badge="ACCOMMODATION • PRIVATE REST">
+              <div class="amenity-card" data-space-key="room" data-aspect="landscape" data-img="assets/images/real/cottage-stay-block.jpg" data-title="Resort Cottage Wing & Verandas" data-badge="ACCOMMODATION • PRIVATE REST">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"></path></svg>
                 </div>
@@ -341,8 +341,8 @@
           <div class="feature-right">
             <div class="space-showcase-container" id="activeDisplayCard">
               
-              <!-- Clean Image Card (Fully Visible, Zero Zoom, Centered Horizontally & Vertically) -->
-              <div class="space-photo-box" id="spacePhotoBox">
+              <!-- Clean Image Card (Same Portrait As Photo, Perfectly Aligned) -->
+              <div class="space-photo-box is-portrait" id="spacePhotoBox">
                 <img src="assets/images/real/banquet-ballroom-chandelier.jpg" alt="" class="space-photo-backdrop" id="spaceDisplayBackdrop" aria-hidden="true">
                 <img src="assets/images/real/banquet-ballroom-chandelier.jpg" alt="Grand AC Banquet Ballroom with Chandelier at Bandhan Resort" class="space-photo-img" id="spaceDisplayImg">
                 <div class="space-photo-badge" id="spaceDisplayBadge">
