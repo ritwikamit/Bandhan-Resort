@@ -1,0 +1,254 @@
+[
+  {
+    "id": "palace-entrance",
+    "file": "imgi_21_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-ViBRU5XkuY.jpg",
+    "title": "Grand Palace Facade & Royal Entrance",
+    "category": "exterior",
+    "desc": "Illuminated arches, jharokha pavilions, and grand welcoming portal at night.",
+    "landing": true,
+    "processed_src": "assets/images/real/palace-entrance.jpg"
+  },
+  {
+    "id": "banquet-ballroom-wide",
+    "file": "imgi_77_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-EllQcpbl2P.jpg",
+    "title": "Grand Royal Banquet Ballroom",
+    "category": "banquet",
+    "desc": "Cathedral draping, chandelier illumination, red carpet aisle, and royal stage.",
+    "landing": true,
+    "processed_src": "assets/images/real/banquet-ballroom-wide.jpg"
+  },
+  {
+    "id": "stage-throne-setup",
+    "file": "imgi_34_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-M1ULeLXf5X.jpg",
+    "title": "Bridal Stage & Chandelier Hall",
+    "category": "stage",
+    "desc": "Intricate floral backdrop, royal sofa seating, and polished vitrified marble flooring.",
+    "landing": true,
+    "processed_src": "assets/images/real/stage-throne-setup.jpg"
+  },
+  {
+    "id": "wedding-mandap",
+    "file": "imgi_46_bandhan-resort-aurangabad-bihar-hotels-btqfeq4oqs.jpg",
+    "title": "Sacred Wedding Mandap Decor",
+    "category": "stage",
+    "desc": "Traditional floral pillars, sacred havan altar, and ceremonial canopy.",
+    "landing": true,
+    "processed_src": "assets/images/real/wedding-mandap.jpg"
+  },
+  {
+    "id": "restaurant-courtyard",
+    "file": "imgi_16_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-qDX3tOzoDR.jpg",
+    "title": "On-Premise Restaurant & Courtyard",
+    "category": "dining",
+    "desc": "Paved banquet courtyard, garden planters, and family dining facilities.",
+    "landing": true,
+    "processed_src": "assets/images/real/restaurant-courtyard.jpg"
+  },
+  {
+    "id": "cottage-stay-block",
+    "file": "imgi_38_bandhan-resort-aurangabad-bihar-1qlrmzquxb.jpg",
+    "title": "Resort Cottage Rooms & Veranda",
+    "category": "rooms",
+    "desc": "Spacious guest accommodation wing with landscaped walkway and lush lawns.",
+    "landing": true,
+    "processed_src": "assets/images/real/cottage-stay-block.jpg"
+  },
+  {
+    "id": "peach-canopy-hall",
+    "file": "imgi_25_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-YfduQGG2Mv.jpg",
+    "title": "Grand Celebration Hall with Ceiling Rings",
+    "category": "banquet",
+    "desc": "Draped silk ceiling with circular lighting rings and audience banquet seating.",
+    "landing": true,
+    "processed_src": "assets/images/real/peach-canopy-hall.jpg"
+  },
+  {
+    "id": "banquet-decor-stage",
+    "file": "imgi_12_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-mSI9siV4YA.jpg",
+    "title": "Evening Reception Stage Decor",
+    "category": "stage",
+    "desc": "Festive lighting and flower work for engagement and sangeet celebrations.",
+    "landing": false,
+    "processed_src": "assets/images/real/banquet-decor-stage.jpg"
+  },
+  {
+    "id": "reception-foyer",
+    "file": "imgi_10_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-IHt6vonFqJ.jpg",
+    "title": "Guest Welcome Gallery & Foyer",
+    "category": "banquet",
+    "desc": "Spacious hall entrance designed for welcoming baraat and receiving guests.",
+    "landing": false,
+    "processed_src": "assets/images/real/reception-foyer.jpg"
+  },
+  {
+    "id": "dining-hall-evening",
+    "file": "imgi_29_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-OFRRtkxZyz.jpg",
+    "title": "Banquet Dining Hall Setup",
+    "category": "dining",
+    "desc": "Arranged dining section for wedding feasts and catered celebrations.",
+    "landing": false,
+    "processed_src": "assets/images/real/dining-hall-evening.jpg"
+  },
+  {
+    "id": "lawn-night-view",
+    "file": "imgi_17_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-9GC1de98cV.jpg",
+    "title": "Lawn Lighting & Open Grounds",
+    "category": "exterior",
+    "desc": "Night ambiance across the open celebration grounds.",
+    "landing": false,
+    "processed_src": "assets/images/real/lawn-night-view.jpg"
+  },
+  {
+    "id": "stage-canopy-view",
+    "file": "imgi_18_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-bQSHtgGJmX.jpg",
+    "title": "Festive Mandap Canopy",
+    "category": "stage",
+    "desc": "Detailed view of traditional ceremony pavilion.",
+    "landing": false,
+    "processed_src": "assets/images/real/stage-canopy-view.jpg"
+  },
+  {
+    "id": "hall-seating-overview",
+    "file": "imgi_22_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-woju2Jrst6.jpg",
+    "title": "AC Hall Guest Seating Arrangement",
+    "category": "banquet",
+    "desc": "Spacious seating alignment accommodating large wedding parties.",
+    "landing": false,
+    "processed_src": "assets/images/real/hall-seating-overview.jpg"
+  },
+  {
+    "id": "mandap-front",
+    "file": "imgi_24_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-VQ82QKH6MK.jpg",
+    "title": "Ceremonial Stage Front View",
+    "category": "stage",
+    "desc": "Focal view of stage decorated for wedding rituals.",
+    "landing": false,
+    "processed_src": "assets/images/real/mandap-front.jpg"
+  },
+  {
+    "id": "stage-side-perspective",
+    "file": "imgi_28_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-1kvqU8zVQ8.jpg",
+    "title": "Celebration Stage Side Perspective",
+    "category": "stage",
+    "desc": "Side angle of floral stage and elevated dais.",
+    "landing": false,
+    "processed_src": "assets/images/real/stage-side-perspective.jpg"
+  },
+  {
+    "id": "hall-pillars-drape",
+    "file": "imgi_30_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-xvd2kl7wws-250.jpg",
+    "title": "Hall Pillars & Fabric Decor",
+    "category": "banquet",
+    "desc": "Pillar decoration and festive fabric draping.",
+    "landing": false,
+    "processed_src": "assets/images/real/hall-pillars-drape.jpg"
+  },
+  {
+    "id": "ceiling-chandelier-ring",
+    "file": "imgi_31_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-1ygu7du4ai-250.jpg",
+    "title": "Ceiling Chandelier Lighting",
+    "category": "banquet",
+    "desc": "Warm chandeliers and illuminated false ceiling.",
+    "landing": false,
+    "processed_src": "assets/images/real/ceiling-chandelier-ring.jpg"
+  },
+  {
+    "id": "stage-curtain-lights",
+    "file": "imgi_32_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-tqx5xazxpo-250.jpg",
+    "title": "Stage Backlight & Fairy Strings",
+    "category": "stage",
+    "desc": "Warm fairy lights and curtain decor.",
+    "landing": false,
+    "processed_src": "assets/images/real/stage-curtain-lights.jpg"
+  },
+  {
+    "id": "flower-garland-setup",
+    "file": "imgi_33_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-itb0g49a1r-250.jpg",
+    "title": "Fresh Flower Garland Work",
+    "category": "stage",
+    "desc": "Floral decoration for entrance gate and stage.",
+    "landing": false,
+    "processed_src": "assets/images/real/flower-garland-setup.jpg"
+  },
+  {
+    "id": "buffet-counter-area",
+    "file": "imgi_13_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-38Fghs0j7r.jpg",
+    "title": "Buffet Counter & Food Service",
+    "category": "dining",
+    "desc": "Arranged dining and buffet counters for guest catering.",
+    "landing": false,
+    "processed_src": "assets/images/real/buffet-counter-area.jpg"
+  },
+  {
+    "id": "lawn-garden-boundary",
+    "file": "imgi_20_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-i3HtKHh26C.jpg",
+    "title": "Garden Pathway & Lawn Boundary",
+    "category": "exterior",
+    "desc": "Green lawn perimeter and pathway lighting.",
+    "landing": false,
+    "processed_src": "assets/images/real/lawn-garden-boundary.jpg"
+  },
+  {
+    "id": "evening-outdoor-view",
+    "file": "imgi_27_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-19T33GMmx7.jpg",
+    "title": "Evening Outdoor Celebration Ambiance",
+    "category": "exterior",
+    "desc": "Dusk atmosphere across Bandhan Resort.",
+    "landing": false,
+    "processed_src": "assets/images/real/evening-outdoor-view.jpg"
+  },
+  {
+    "id": "resort-facade-angle",
+    "file": "imgi_37_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-dyv62tjiqe.jpg",
+    "title": "Exterior Facade Architecture",
+    "category": "exterior",
+    "desc": "Architectural styling of resort buildings.",
+    "landing": false,
+    "processed_src": "assets/images/real/resort-facade-angle.jpg"
+  },
+  {
+    "id": "entrance-pathway",
+    "file": "imgi_42_bandhan-resort-aurangabad-bihar-hotels-cu3s05vd5c.jpg",
+    "title": "Resort Entrance Pathway",
+    "category": "exterior",
+    "desc": "Arrival driveway and parking access area.",
+    "landing": false,
+    "processed_src": "assets/images/real/entrance-pathway.jpg"
+  },
+  {
+    "id": "guest-room-interior",
+    "file": "imgi_4_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-JED1wg83Fq.jpg",
+    "title": "Guest Room Accommodation",
+    "category": "rooms",
+    "desc": "Clean and comfortable room setup for host families.",
+    "landing": false,
+    "processed_src": "assets/images/real/guest-room-interior.jpg"
+  },
+  {
+    "id": "cottage-wing-angle",
+    "file": "imgi_5_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-TzVu5o81We.jpg",
+    "title": "Cottage Wing & Veranda View",
+    "category": "rooms",
+    "desc": "Side view of guest stay rooms and corridor.",
+    "landing": false,
+    "processed_src": "assets/images/real/cottage-wing-angle.jpg"
+  },
+  {
+    "id": "lawn-greenery",
+    "file": "imgi_6_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-BLuy5ODtKq.jpg",
+    "title": "Manicured Green Lawn",
+    "category": "exterior",
+    "desc": "Daytime green grounds suitable for afternoon ceremonies.",
+    "landing": false,
+    "processed_src": "assets/images/real/lawn-greenery.jpg"
+  },
+  {
+    "id": "entrance-arch-day",
+    "file": "imgi_7_bandhan-resort-aurangabad-bihar-ho-aurangabad-bihar-resorts-w67oPaZKv0.jpg",
+    "title": "Daytime Entrance Arch",
+    "category": "exterior",
+    "desc": "Grand gateway welcoming guests from Bijauli Road.",
+    "landing": false,
+    "processed_src": "assets/images/real/entrance-arch-day.jpg"
+  }
+]

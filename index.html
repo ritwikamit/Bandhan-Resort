@@ -14,6 +14,12 @@
   <meta property="og:description" content="Experience unparalleled hospitality with air-conditioned banquets, lush wedding lawns, and serene garden stays near G.D. Goenka School, Aurangabad.">
   <meta property="og:image" content="assets/images/bandhan-resort-exterior.jpg">
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
   <!-- Fonts: Google Font Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +34,7 @@
     "@context": "https://schema.org",
     "@type": "Resort",
     "name": "Bandhan Resort",
-    "image": "assets/images/bandhan-resort-exterior.jpg",
+    "image": "assets/images/real/palace-entrance.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Near G.D. Goenka School, Bijauli Road",
@@ -57,7 +63,7 @@
   <header class="header-wrapper" id="siteHeader">
     <nav class="glass-navbar" aria-label="Main Navigation">
       <a href="#hero" class="brand-link">
-        <div class="brand-icon">B</div>
+        <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort Emblem" class="brand-logo-img">
         <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
         <span class="brand-badge">AURANGABAD</span>
       </a>
@@ -67,6 +73,7 @@
         <li class="nav-item"><a href="#experience">Celebration Flow</a></li>
         <li class="nav-item"><a href="#packages">Packages</a></li>
         <li class="nav-item"><a href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a href="gallery.html" style="color: var(--color-emerald); font-weight: 600;">All Photos (28) ↗</a></li>
         <li class="nav-item"><a href="#location">Directions</a></li>
       </ul>
 
@@ -94,12 +101,17 @@
 
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem;">
+      <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort Emblem" class="brand-logo-img">
+      <div style="font-size: 1.2rem; font-weight: 700; color: #fff;">BANDHAN RESORT</div>
+    </div>
     <ul class="mobile-nav-links">
       <li><a href="#hero" class="mobile-link">Overview <span>→</span></a></li>
       <li><a href="#spaces" class="mobile-link">Spaces & Amenities <span>→</span></a></li>
       <li><a href="#experience" class="mobile-link">Celebration Flow <span>→</span></a></li>
       <li><a href="#packages" class="mobile-link">Packages <span>→</span></a></li>
-      <li><a href="#gallery" class="mobile-link">Photo Gallery <span>→</span></a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery Highlights <span>→</span></a></li>
+      <li><a href="gallery.html" class="mobile-link" style="color: var(--color-emerald);">Full Photo Gallery (28 Photos) <span>→</span></a></li>
       <li><a href="#location" class="mobile-link">Location & Directions <span>→</span></a></li>
     </ul>
 
@@ -240,68 +252,68 @@
             <div class="feature-amenities-grid" id="amenityGrid">
               
               <!-- 1. AC Banquet Hall -->
-              <div class="amenity-card is-active" data-space-key="banquet" data-img="assets/images/bandhan-resort-banquet.jpg" data-title="Grand AC Banquet Hall" data-badge="INDOOR • CLIMATE CONTROLLED">
+              <div class="amenity-card is-active" data-space-key="banquet" data-img="assets/images/real/banquet-ballroom-wide.jpg" data-title="Grand AC Banquet Ballroom" data-badge="INDOOR • GRAND CHANDELIER BALLROOM">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 7v14M21 7v14M6 7V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3M9 11h6M9 15h6"></path></svg>
                 </div>
                 <div class="amenity-info">
-                  <h4>Grand AC Banquet Hall</h4>
-                  <p>Spacious, fully air-conditioned ballroom with high ceilings, chandeliers, and polished floors.</p>
+                  <h4>Grand AC Banquet Ballroom</h4>
+                  <p>Spacious, fully air-conditioned ballroom with cathedral ceiling draping, chandeliers, and royal stage.</p>
                 </div>
               </div>
 
-              <!-- 2. Wedding Lawn -->
-              <div class="amenity-card" data-space-key="lawn" data-img="assets/images/bandhan-resort-lawn.jpg" data-title="Open-Air Celebration Lawn" data-badge="OUTDOOR • MANICURED GREENS">
+              <!-- 2. Wedding Lawn & Royal Facade -->
+              <div class="amenity-card" data-space-key="lawn" data-img="assets/images/real/palace-entrance.jpg" data-title="Palace Facade & Open Lawn Grounds" data-badge="OUTDOOR • ROYAL ILLUMINATION">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
                 </div>
                 <div class="amenity-info">
-                  <h4>Sprawling Open Lawn</h4>
-                  <p>Expansive emerald green lawns ideal for grand mandaps, dining setups, and evening starlight events.</p>
+                  <h4>Palace Facade & Open Lawns</h4>
+                  <p>Illuminated royal gateway with jharokha architecture, welcoming arrival portal, and celebration grounds.</p>
                 </div>
               </div>
 
               <!-- 3. Mandap & Stage Setup -->
-              <div class="amenity-card" data-space-key="stage" data-img="assets/images/bandhan-resort-lawn.jpg" data-title="Custom Stage & Mandap Decor" data-badge="STAGE • CUSTOM LIGHTING">
+              <div class="amenity-card" data-space-key="stage" data-img="assets/images/real/stage-throne-setup.jpg" data-title="Royal Throne & Stage Setup" data-badge="STAGE • FLORAL THRONE DAIS">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                 </div>
                 <div class="amenity-info">
-                  <h4>Stage & Floral Architecture</h4>
-                  <p>Dedicated focal stages engineered for wedding garlands, royal thrones, photography, and music.</p>
+                  <h4>Bridal Stage & Royal Throne</h4>
+                  <p>Grand backdrop florals, ceremonial sofa seating, and polished floor reflecting chandelier lights.</p>
                 </div>
               </div>
 
               <!-- 4. Outdoor Courtyard Dining -->
-              <div class="amenity-card" data-space-key="dining" data-img="assets/images/bandhan-resort-dining.jpg" data-title="Courtyard & Pergola Dining" data-badge="DINING • OPEN AMBIANCE">
+              <div class="amenity-card" data-space-key="dining" data-img="assets/images/real/restaurant-courtyard.jpg" data-title="Restaurant & Courtyard Dining" data-badge="DINING • RESTAURANT COURTYARD">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"></path></svg>
                 </div>
                 <div class="amenity-info">
-                  <h4>Outdoor Seating & Dining</h4>
-                  <p>Charming pergola-lit courtyard and garden areas for buffet dinners, guest conversation, and high tea.</p>
+                  <h4>Restaurant & Courtyard</h4>
+                  <p>Dedicated on-site restaurant facility, paved banquet courtyard, and open outdoor gathering spaces.</p>
                 </div>
               </div>
 
-              <!-- 5. Children's Play Zone -->
-              <div class="amenity-card" data-space-key="play" data-img="assets/images/bandhan-resort-play.jpg" data-title="Children's Activity Play Garden" data-badge="FAMILY • SAFE RECREATION">
+              <!-- 5. Sacred Wedding Mandap -->
+              <div class="amenity-card" data-space-key="mandap" data-img="assets/images/real/wedding-mandap.jpg" data-title="Traditional Wedding Mandap" data-badge="CEREMONY • SACRED MANDAP">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"></path></svg>
                 </div>
                 <div class="amenity-info">
-                  <h4>Children's Play Zone</h4>
-                  <p>Dedicated, safe garden play area with wooden swings and slides to keep younger guests delighted.</p>
+                  <h4>Sacred Wedding Mandap</h4>
+                  <p>Traditional four-pillar floral canopy and ceremonial Vedic altar for marriage vows and pheras.</p>
                 </div>
               </div>
 
               <!-- 6. Guest Suites -->
-              <div class="amenity-card" data-space-key="room" data-img="assets/images/bandhan-resort-room.jpg" data-title="Host & Guest Accommodation Suites" data-badge="ACCOMMODATION • PRIVATE REST">
+              <div class="amenity-card" data-space-key="room" data-img="assets/images/real/cottage-stay-block.jpg" data-title="Resort Cottage Wing & Verandas" data-badge="ACCOMMODATION • PRIVATE REST">
                 <div class="amenity-icon-box">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"></path></svg>
                 </div>
                 <div class="amenity-info">
-                  <h4>Guest Stays & Suites</h4>
-                  <p>Comfortable on-premise rooms for bridal preparations, host families, and outstation attendees.</p>
+                  <h4>Cottage Wing & Guest Stays</h4>
+                  <p>Long cottage-style guest rooms with covered verandas, landscaped garden walks, and quiet surroundings.</p>
                 </div>
               </div>
 
@@ -312,7 +324,7 @@
           <div class="feature-right">
             <div class="display-card" id="activeDisplayCard">
               <div class="display-image-container">
-                <img src="assets/images/bandhan-resort-banquet.jpg" alt="Grand AC Banquet Hall at Bandhan Resort" class="display-image" id="spaceDisplayImg">
+                <img src="assets/images/real/banquet-ballroom-wide.jpg" alt="Grand AC Banquet Hall at Bandhan Resort" class="display-image" id="spaceDisplayImg">
                 <div class="display-image-gradient"></div>
               </div>
 
@@ -510,7 +522,7 @@
         <div class="bento-card bento-featured">
           <div class="bento-featured-ribbon">Most Requested</div>
           <div class="bento-top-media">
-            <img src="assets/images/bandhan-resort-lawn.jpg" alt="Wedding lawn setup at Bandhan Resort" class="bento-top-img">
+            <img src="assets/images/real/palace-entrance.jpg" alt="Illuminated Palace Entrance and Lawn at Bandhan Resort" class="bento-top-img">
             <div class="bento-top-gradient">
               <h3 class="bento-package-title">Grand Wedding & Reception</h3>
             </div>
@@ -550,7 +562,7 @@
         <!-- Bento Card 2: Sangeet, Engagement & Parties -->
         <div class="bento-card">
           <div class="bento-top-media">
-            <img src="assets/images/bandhan-resort-banquet.jpg" alt="Banquet hall setup for engagement and sangeet" class="bento-top-img">
+            <img src="assets/images/real/stage-throne-setup.jpg" alt="Banquet hall setup with floral throne stage" class="bento-top-img">
             <div class="bento-top-gradient">
               <h3 class="bento-package-title">Engagement, Sangeet & Birthdays</h3>
             </div>
@@ -590,7 +602,7 @@
         <!-- Bento Card 3: Family Gatherings & Residential Stay -->
         <div class="bento-card">
           <div class="bento-top-media">
-            <img src="assets/images/bandhan-resort-dining.jpg" alt="Outdoor courtyard dining at Bandhan Resort" class="bento-top-img">
+            <img src="assets/images/real/restaurant-courtyard.jpg" alt="Outdoor courtyard dining and restaurant at Bandhan Resort" class="bento-top-img">
             <div class="bento-top-gradient">
               <h3 class="bento-package-title">Family Gatherings & Stays</h3>
             </div>
@@ -655,60 +667,73 @@
 
         <div class="gallery-grid" id="galleryGrid">
           
-          <!-- Image 1 -->
-          <div class="gallery-item" data-category="exterior" data-full="assets/images/bandhan-resort-exterior.jpg" data-caption="Grand Architectural Facade & Twilight Lawn at Bandhan Resort">
-            <img src="assets/images/bandhan-resort-exterior.jpg" alt="Bandhan Resort illuminated facade and manicured lawn" class="gallery-item-img">
+          <!-- Image 1: Real Palace Entrance -->
+          <div class="gallery-item" data-category="exterior" data-full="assets/images/real/palace-entrance.jpg" data-caption="Grand Architectural Palace Facade & Royal Entrance at Bandhan Resort">
+            <img src="assets/images/real/palace-entrance.jpg" alt="Bandhan Resort illuminated facade and royal entrance" class="gallery-item-img">
             <div class="gallery-item-overlay">
-              <span class="gallery-item-cat">Exterior & Gardens</span>
-              <h3 class="gallery-item-title">Resort Facade & Celebration Lawn</h3>
+              <span class="gallery-item-cat">Exterior & Entrance</span>
+              <h3 class="gallery-item-title">Royal Palace Facade & Entrance</h3>
             </div>
           </div>
 
-          <!-- Image 2 -->
-          <div class="gallery-item" data-category="banquet" data-full="assets/images/bandhan-resort-banquet.jpg" data-caption="Air-Conditioned Grand Banquet Ballroom with Chandeliers & Stage">
-            <img src="assets/images/bandhan-resort-banquet.jpg" alt="Air-conditioned Banquet hall with crystal chandeliers" class="gallery-item-img">
+          <!-- Image 2: Real Banquet Ballroom -->
+          <div class="gallery-item" data-category="banquet" data-full="assets/images/real/banquet-ballroom-wide.jpg" data-caption="Grand Air-Conditioned Banquet Ballroom with Cathedral Draping & Chandeliers">
+            <img src="assets/images/real/banquet-ballroom-wide.jpg" alt="Air-conditioned Banquet hall with royal draping" class="gallery-item-img">
             <div class="gallery-item-overlay">
               <span class="gallery-item-cat">Indoor Ballroom</span>
-              <h3 class="gallery-item-title">Grand AC Banquet Hall</h3>
+              <h3 class="gallery-item-title">Grand AC Banquet Ballroom</h3>
             </div>
           </div>
 
-          <!-- Image 3 -->
-          <div class="gallery-item" data-category="exterior" data-full="assets/images/bandhan-resort-lawn.jpg" data-caption="Starlit Wedding Lawn with Floral Mandap and Tree Fairy Lights">
-            <img src="assets/images/bandhan-resort-lawn.jpg" alt="Outdoor wedding lawn setup with illuminated mandap" class="gallery-item-img">
+          <!-- Image 3: Real Stage Throne Setup -->
+          <div class="gallery-item" data-category="stage" data-full="assets/images/real/stage-throne-setup.jpg" data-caption="Bridal Stage with Floral Backdrop, Royal Throne & Chandelier">
+            <img src="assets/images/real/stage-throne-setup.jpg" alt="Bridal reception stage with royal sofa" class="gallery-item-img">
             <div class="gallery-item-overlay">
-              <span class="gallery-item-cat">Open-Air Venue</span>
-              <h3 class="gallery-item-title">Evening Wedding Mandap Lawn</h3>
+              <span class="gallery-item-cat">Stage & Mandap</span>
+              <h3 class="gallery-item-title">Bridal Stage & Floral Backdrop</h3>
             </div>
           </div>
 
-          <!-- Image 4 -->
-          <div class="gallery-item" data-category="dining" data-full="assets/images/bandhan-resort-dining.jpg" data-caption="Pergola Garden Courtyard with Ambient String Lighting">
-            <img src="assets/images/bandhan-resort-dining.jpg" alt="Pergola lit courtyard dining at Bandhan Resort" class="gallery-item-img">
+          <!-- Image 4: Real Restaurant & Courtyard -->
+          <div class="gallery-item" data-category="dining" data-full="assets/images/real/restaurant-courtyard.jpg" data-caption="On-Premise Restaurant & Paved Celebration Courtyard">
+            <img src="assets/images/real/restaurant-courtyard.jpg" alt="Restaurant building and courtyard at Bandhan Resort" class="gallery-item-img">
             <div class="gallery-item-overlay">
-              <span class="gallery-item-cat">Alfresco Ambiance</span>
-              <h3 class="gallery-item-title">Courtyard & Pergola Dining</h3>
+              <span class="gallery-item-cat">Dining & Courtyard</span>
+              <h3 class="gallery-item-title">Restaurant & Outdoor Courtyard</h3>
             </div>
           </div>
 
-          <!-- Image 5 -->
-          <div class="gallery-item" data-category="play" data-full="assets/images/bandhan-resort-play.jpg" data-caption="Dedicated Family Pavilion & Children's Garden Play Park">
-            <img src="assets/images/bandhan-resort-play.jpg" alt="Children's activity playground and family gazebo" class="gallery-item-img">
+          <!-- Image 5: Real Wedding Mandap -->
+          <div class="gallery-item" data-category="stage" data-full="assets/images/real/wedding-mandap.jpg" data-caption="Traditional Wedding Mandap with Floral Pillars & Ceremonial Dais">
+            <img src="assets/images/real/wedding-mandap.jpg" alt="Traditional wedding mandap setup" class="gallery-item-img">
             <div class="gallery-item-overlay">
-              <span class="gallery-item-cat">Family & Kids</span>
-              <h3 class="gallery-item-title">Children's Play Park & Pavilion</h3>
+              <span class="gallery-item-cat">Ceremony Mandap</span>
+              <h3 class="gallery-item-title">Sacred Wedding Mandap Decor</h3>
             </div>
           </div>
 
-          <!-- Image 6 -->
-          <div class="gallery-item" data-category="room" data-full="assets/images/bandhan-resort-room.jpg" data-caption="Contemporary Guest Suite with Garden Views">
-            <img src="assets/images/bandhan-resort-room.jpg" alt="Modern hotel room interior at Bandhan Resort" class="gallery-item-img">
+          <!-- Image 6: Real Cottage Wing -->
+          <div class="gallery-item" data-category="room" data-full="assets/images/real/cottage-stay-block.jpg" data-caption="Resort Cottage Wing with Garden Verandas for Host Families">
+            <img src="assets/images/real/cottage-stay-block.jpg" alt="Guest room cottages and veranda walkway" class="gallery-item-img">
             <div class="gallery-item-overlay">
-              <span class="gallery-item-cat">Guest Stays</span>
-              <h3 class="gallery-item-title">Comfortable Guest Accommodation</h3>
+              <span class="gallery-item-cat">Guest Cottages</span>
+              <h3 class="gallery-item-title">Guest Cottages & Veranda Stays</h3>
             </div>
           </div>
 
+        </div>
+
+        <!-- Call to action linking to dedicated gallery page -->
+        <div style="margin-top: 3.5rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.25rem;">
+          <p style="color: var(--color-zinc-400); font-size: 1.05rem; max-width: 600px;">
+            Want to see all 28 authentic photographs covering banquet halls, night lighting, dining setups, and suites?
+          </p>
+          <a href="gallery.html" class="btn-action btn-action-emerald">
+            <span>Explore All 28+ Real Photographs in Full Gallery</span>
+            <div class="btn-icon-wrapper">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -717,8 +742,15 @@
     <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo View">
       <div class="lightbox-content-box">
         <button class="lightbox-btn-close" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-btn-prev" id="lightboxPrevBtn" aria-label="Previous Photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="lightbox-btn-next" id="lightboxNextBtn" aria-label="Next Photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
         <img src="" alt="" class="lightbox-img" id="lightboxImg">
         <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div class="lightbox-counter" id="lightboxCounter">Photo 1 of 6</div>
       </div>
     </div>
 
@@ -870,7 +902,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-link" style="margin-bottom: 0.75rem;">
-            <div class="brand-icon">B</div>
+            <img src="assets/images/bandhan-emblem.png" alt="Bandhan Resort" class="brand-logo-img">
             <div class="brand-text">BANDHAN <span style="font-weight: 300; opacity: 0.85;">RESORT</span></div>
           </div>
           <p>
@@ -886,6 +918,7 @@
             <li><a href="#spaces">Courtyard Pergola Dining</a></li>
             <li><a href="#spaces">Children's Play Garden</a></li>
             <li><a href="#spaces">Guest Stays & Suites</a></li>
+            <li><a href="gallery.html" style="color: var(--color-emerald); font-weight: 600;">Full Photo Gallery (28 Photos) &rarr;</a></li>
           </ul>
         </div>
 
