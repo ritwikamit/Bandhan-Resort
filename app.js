@@ -253,10 +253,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 3. Mobile Navigation Drawer Toggle
+  // 3. Mobile Navigation Drawer Toggle & Close
   const mobileToggle = document.getElementById('mobileMenuToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
+  const mobileDrawerClose = document.getElementById('mobileDrawerClose');
   const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  const closeDrawer = () => {
+    if (mobileDrawer) {
+      mobileDrawer.classList.remove('is-active');
+      if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+  };
 
   if (mobileToggle && mobileDrawer) {
     mobileToggle.addEventListener('click', () => {
@@ -265,11 +273,12 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileToggle.setAttribute('aria-expanded', isExpanded);
     });
 
+    if (mobileDrawerClose) {
+      mobileDrawerClose.addEventListener('click', closeDrawer);
+    }
+
     mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileDrawer.classList.remove('is-active');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeDrawer);
     });
   }
 
@@ -298,6 +307,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (spaceBadgeText && newBadge) {
         spaceBadgeText.textContent = newBadge;
+      }
+
+      // Smooth scroll assist on mobile screens (< 1080px)
+      if (window.innerWidth < 1080) {
+        const displayCard = document.getElementById('activeDisplayCard');
+        if (displayCard) {
+          const rect = displayCard.getBoundingClientRect();
+          if (rect.top < 0 || rect.bottom > window.innerHeight) {
+            displayCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        }
       }
     });
   });
@@ -454,6 +474,40 @@ document.addEventListener('DOMContentLoaded', () => {
         closeLightbox();
       }
     });
+
+    // Touch Swipe Gestures for Smartphones and Tablets
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
+
+    lightboxModal.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches.length === 1) {
+        touchStartX = e.touches[0].screenX;
+        touchStartY = e.touches[0].screenY;
+      }
+    }, { passive: true });
+
+    lightboxModal.addEventListener('touchend', (e) => {
+      if (e.changedTouches && e.changedTouches.length === 1) {
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+        const diffX = touchEndX - touchStartX;
+        const diffY = touchEndY - touchStartY;
+
+        // Dominant horizontal swipe (> 40px)
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+          if (diffX < 0) {
+            nextPhoto(); // Swipe Left -> Next photo
+          } else {
+            prevPhoto(); // Swipe Right -> Previous photo
+          }
+        } else if (diffY > 80 && Math.abs(diffX) < 50) {
+          // Swipe Down -> Dismiss lightbox
+          closeLightbox();
+        }
+      }
+    }, { passive: true });
   }
 
   // Hook landing page gallery items into the lightbox with prev/next
