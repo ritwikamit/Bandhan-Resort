@@ -9,19 +9,19 @@
 const RESORT_PHOTOS = [
   {
     id: "palace-entrance",
-    title: "Grand Palace Facade & Royal Entrance",
+    title: "Grand Palace Facade & Royal Lawns",
     category: "exterior",
     catLabel: "Exterior Architecture",
-    desc: "Illuminated arches, jharokha pavilions, and grand welcoming portal at night.",
-    src: "assets/images/real/palace-entrance.jpg"
+    desc: "Grand palatial facade with jharokha pavilions, royal elephant sentinels, and manicured celebration lawns.",
+    src: "assets/images/real/grand-palace-hero.jpg"
   },
   {
     id: "banquet-ballroom-wide",
-    title: "Grand Royal Banquet Ballroom",
+    title: "Indoor Grand Chandelier Ballroom",
     category: "banquet",
     catLabel: "AC Banquet Ballroom",
-    desc: "Cathedral draping, chandelier illumination, red carpet aisle, and royal stage.",
-    src: "assets/images/real/banquet-ballroom-wide.jpg"
+    desc: "Cathedral silk draping, grand hanging chandelier, stage florals, and ceremonial carpet aisle.",
+    src: "assets/images/real/banquet-ballroom-chandelier.jpg"
   },
   {
     id: "stage-throne-setup",
