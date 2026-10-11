@@ -161,9 +161,6 @@
 </head>
 <body>
 
-  <!-- Grain Overlay Texture -->
-  <div class="grain-overlay" aria-hidden="true"></div>
-
   <!-- Floating Glass Navbar with Transparent Logo Emblem -->
   <header class="header-wrapper" id="siteHeader">
     <nav class="glass-navbar" aria-label="Main Navigation">
@@ -176,11 +173,21 @@
       </a>
 
       <ul class="nav-links">
-        <li class="nav-item"><a href="index.html#hero">Home Overview</a></li>
-        <li class="nav-item"><a href="index.html#spaces">Spaces & Amenities</a></li>
-        <li class="nav-item"><a href="index.html#packages">Packages</a></li>
-        <li class="nav-item"><a href="gallery.html" class="active" style="color: var(--color-emerald); font-weight: 600;">Full Gallery (28)</a></li>
-        <li class="nav-item"><a href="index.html#location">Directions</a></li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="index.html#spaces">Spaces</a></li>
+        <li class="nav-item"><a href="gallery.html" class="active" style="color: var(--color-emerald); font-weight: 600;">Gallery</a></li>
+        <li class="nav-item nav-item-dropdown">
+          <button class="nav-dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            <span>More</span>
+            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html#packages" class="dropdown-link" role="menuitem">Packages</a>
+            <a href="index.html#experience" class="dropdown-link" role="menuitem">Celebration Flow</a>
+            <a href="index.html#location" class="dropdown-link" role="menuitem">Directions & Map</a>
+            <a href="tel:+919470273100" class="dropdown-link" role="menuitem">Direct Call (+91 94702 73100)</a>
+          </div>
+        </li>
       </ul>
 
       <div class="nav-actions">
@@ -189,6 +196,7 @@
           <span>Call Venue</span>
         </a>
 
+        <!-- Interactive Action Button (Contained securely within navbar cylinder) -->
         <button class="btn-action" id="openEnquiryModalBtn">
           <span>Enquire Dates</span>
           <div class="btn-icon-wrapper">
