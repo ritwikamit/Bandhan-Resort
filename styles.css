@@ -1720,6 +1720,402 @@ p {
 }
 
 /* ==========================================================================
+   GOOGLE MAPS REVIEWS & RATINGS SECTION
+   Modern Glassmorphic Review Wall with Verified Google Maps Social Proof
+   ========================================================================== */
+.reviews-section {
+  padding: 5rem 0 3rem;
+  position: relative;
+}
+
+.reviews-wrapper {
+  background: rgba(24, 24, 27, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--glass-border);
+  border-radius: var(--radius-wrapper);
+  padding: 3.5rem 1.75rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .reviews-wrapper {
+    padding: 4.5rem 3.5rem;
+  }
+}
+
+.reviews-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reviews-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .reviews-header-block {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.reviews-header-left {
+  max-width: 620px;
+}
+
+.google-badge-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-zinc-200);
+  margin-bottom: 1rem;
+}
+
+.reviews-main-title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.85rem;
+}
+
+.reviews-subtitle {
+  color: var(--color-zinc-400);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+/* Google Rating Aggregate Summary Card */
+.google-rating-summary-card {
+  background: rgba(10, 10, 14, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-card);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 280px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.rating-number-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.rating-big-val {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.rating-stars-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.google-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: #FBBC04;
+}
+
+.google-star-icon {
+  width: 18px;
+  height: 18px;
+  fill: #FBBC04;
+}
+
+.rating-count-label {
+  font-size: 0.82rem;
+  color: var(--color-zinc-400);
+}
+
+.btn-google-review {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.btn-google-review:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: var(--color-emerald);
+  transform: translateY(-2px);
+}
+
+/* Review Highlight Chips */
+.review-highlights-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.review-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--color-zinc-300);
+  font-size: 0.8rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  transition: border-color 200ms ease, background 200ms ease;
+}
+
+.review-chip:hover {
+  background: rgba(52, 211, 153, 0.08);
+  border-color: rgba(52, 211, 153, 0.3);
+  color: var(--color-white);
+}
+
+/* Reviews Cards Grid (Responsive 3-col on desktop, 2-col on tablet, 1-col on mobile) */
+.reviews-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 680px) {
+  .reviews-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .reviews-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual Review Card */
+.review-card {
+  background: rgba(18, 18, 22, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-hover), border-color var(--transition-hover), box-shadow var(--transition-hover);
+  position: relative;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.review-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.review-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.reviewer-profile-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.reviewer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-white);
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.avatar-emerald { background: linear-gradient(135deg, #10b981, #047857); }
+.avatar-purple { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+.avatar-amber { background: linear-gradient(135deg, #f59e0b, #b45309); }
+.avatar-rose { background: linear-gradient(135deg, #f43f5e, #be123c); }
+.avatar-teal { background: linear-gradient(135deg, #14b8a6, #0f766e); }
+
+.reviewer-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-white);
+  line-height: 1.25;
+}
+
+.reviewer-badge {
+  font-size: 0.74rem;
+  color: var(--color-zinc-400);
+  margin-top: 2px;
+}
+
+.google-icon-small {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.review-rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.review-stars-wrap {
+  display: flex;
+  gap: 0.18rem;
+  color: #FBBC04;
+}
+
+.review-stars-wrap svg {
+  width: 15px;
+  height: 15px;
+  fill: #FBBC04;
+}
+
+.review-time-stamp {
+  font-size: 0.74rem;
+  color: var(--color-zinc-500);
+}
+
+.review-event-pill {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-emerald);
+  background: rgba(52, 211, 153, 0.08);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.review-body-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--color-zinc-300);
+  margin: 0.5rem 0 1rem;
+}
+
+.review-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.74rem;
+  color: var(--color-zinc-400);
+}
+
+.verified-source-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--color-zinc-400);
+}
+
+.verified-source-tag svg {
+  color: #34A853;
+}
+
+/* Reviews Bottom Action Bar */
+.reviews-bottom-action {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .reviews-bottom-action {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.reviews-bottom-text h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 0.3rem;
+}
+
+.reviews-bottom-text p {
+  font-size: 0.88rem;
+  color: var(--color-zinc-400);
+}
+
+/* ==========================================================================
    LOCATION & DIRECTIONS SECTION
    Verified Address: Near G.D. Goenka School, Bijauli Road, Aurangabad, Bihar 824101
    ========================================================================== */
